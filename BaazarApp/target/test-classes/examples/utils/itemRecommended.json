@@ -1,0 +1,784 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "id",
+        "name",
+        "description",
+        "category",
+        "active",
+        "offers",
+        "tags",
+        "cities",
+        "isOnline",
+        "merchantType",
+        "isHyperLocal",
+        "curatedImage",
+        "dominantColorCode",
+        "externalId",
+        "image",
+        "url",
+        "tasteMatchScoreReason",
+        "tasteMatchScore",
+        "liked",
+        "wishlisted"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "default": "",
+            "title": "The id Schema",
+            "examples": [
+                "634ea784-f4a6-4d02-8cda-0374e53823d6"
+            ]
+        },
+        "name": {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples": [
+                "Newchic"
+            ]
+        },
+        "description": {
+            "type": "string",
+            "default": "",
+            "title": "The description Schema",
+            "examples": [
+                "Discover your Most Fashionable Collocation with Newchic. Shop The Latest Trends. Our range of products include Clothing \u0026 Shoes \u0026 Home Garden \u0026 Accessories and so on."
+            ]
+        },
+        "category": {
+            "type": "string",
+            "default": "",
+            "title": "The category Schema",
+            "examples": [
+                "apparel and accessories"
+            ]
+        },
+        "active": {
+            "type": "boolean",
+            "default": false,
+            "title": "The active Schema",
+            "examples": [
+                true
+            ]
+        },
+        "offers": {
+            "type": "array",
+            "default": [],
+            "title": "The offers Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "id",
+                    "name",
+                    "description",
+                    "validFrom",
+                    "validTo",
+                    "partner",
+                    "isOnline",
+                    "offerActive",
+                    "cashbackValue",
+                    "currency",
+                    "howToRedeem",
+                    "image",
+                    "offerSource",
+                    "offerStatus",
+                    "offerType",
+                    "payoutType",
+                    "redemptionCode",
+                    "termsAndConditions",
+                    "url",
+                    "claimed",
+                    "redeemed",
+                    "claimedCount",
+                    "redeemedCount"
+                ],
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "title": "The id Schema",
+                        "examples": [
+                            "19886",
+                            "1633",
+                            "1712",
+                            "1597"
+                        ]
+                    },
+                    "name": {
+                        "type": "string",
+                        "title": "The name Schema",
+                        "examples": [
+                            "Get exclusive offers on Newchic"
+                        ]
+                    },
+                    "description": {
+                        "type": "string",
+                        "title": "The description Schema",
+                        "examples": [
+                            "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                            "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied."
+                        ]
+                    },
+                    "validFrom": {
+                        "type": "string",
+                        "title": "The validFrom Schema",
+                        "examples": [
+                            "2021-12-01T00:00:00.389Z",
+                            "2021-05-26T00:00:00.389Z"
+                        ]
+                    },
+                    "validTo": {
+                        "type": "string",
+                        "title": "The validTo Schema",
+                        "examples": [
+                            "2023-02-28T23:59:59.389Z",
+                            "2023-04-30T23:59:59.389Z"
+                        ]
+                    },
+                    "partner": {
+                        "type": "boolean",
+                        "title": "The partner Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "isOnline": {
+                        "type": "boolean",
+                        "title": "The isOnline Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "offerActive": {
+                        "type": "boolean",
+                        "title": "The offerActive Schema",
+                        "examples": [
+                            true
+                        ]
+                    },
+                    "cashbackValue": {
+                        "type": "number",
+                        "title": "The cashbackValue Schema",
+                        "examples": [
+                            12.0
+                        ]
+                    },
+                    "currency": {
+                        "type": "string",
+                        "title": "The currency Schema",
+                        "examples": [
+                            "USD"
+                        ]
+                    },
+                    "howToRedeem": {
+                        "type": "string",
+                        "title": "The howToRedeem Schema",
+                        "examples": [
+                            "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card"
+                        ]
+                    },
+                    "image": {
+                        "type": "string",
+                        "title": "The image Schema",
+                        "examples": [
+                            "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png"
+                        ]
+                    },
+                    "offerSource": {
+                        "type": "string",
+                        "title": "The offerSource Schema",
+                        "examples": [
+                            "Admitad"
+                        ]
+                    },
+                    "offerStatus": {
+                        "type": "string",
+                        "title": "The offerStatus Schema",
+                        "examples": [
+                            "active"
+                        ]
+                    },
+                    "offerType": {
+                        "type": "string",
+                        "title": "The offerType Schema",
+                        "examples": [
+                            "online coupon"
+                        ]
+                    },
+                    "payoutType": {
+                        "type": "string",
+                        "title": "The payoutType Schema",
+                        "examples": [
+                            "cpa_percentage"
+                        ]
+                    },
+                    "redemptionCode": {
+                        "type": "string",
+                        "title": "The redemptionCode Schema",
+                        "examples": [
+                            "AMTDM20",
+                            "NCAFF20",
+                            "NCAFF15",
+                            "NCAFF25"
+                        ]
+                    },
+                    "termsAndConditions": {
+                        "type": "string",
+                        "title": "The termsAndConditions Schema",
+                        "examples": [
+                            "1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                            "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied."
+                        ]
+                    },
+                    "url": {
+                        "type": "string",
+                        "title": "The url Schema",
+                        "examples": [
+                            "https://ad.admitad.com/g/qns7nnebxyd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=19886\u0026subid3=crayon",
+                            "https://ad.admitad.com/g/7f3cxjm4yjd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1633\u0026subid3=crayon",
+                            "https://ad.admitad.com/g/c50whdpob9d1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1712\u0026subid3=crayon",
+                            "https://ad.admitad.com/g/luljs3wmayd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1597\u0026subid3=crayon"
+                        ]
+                    },
+                    "claimed": {
+                        "type": "boolean",
+                        "title": "The claimed Schema",
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "redeemed": {
+                        "type": "boolean",
+                        "title": "The redeemed Schema",
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "claimedCount": {
+                        "type": "integer",
+                        "title": "The claimedCount Schema",
+                        "examples": [
+                            11,
+                            6,
+                            3,
+                            5
+                        ]
+                    },
+                    "redeemedCount": {
+                        "type": "integer",
+                        "title": "The redeemedCount Schema",
+                        "examples": [
+                            0
+                        ]
+                    }
+                },
+                "examples": [{
+                    "id": "19886",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-12-01T00:00:00.389Z",
+                    "validTo": "2023-02-28T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "AMTDM20",
+                    "termsAndConditions": "1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/qns7nnebxyd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=19886\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 11,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1633",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF20",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/7f3cxjm4yjd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1633\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 6,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1712",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF15",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/c50whdpob9d1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1712\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 3,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1597",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF25",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/luljs3wmayd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1597\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 5,
+                    "redeemedCount": 0
+                }]
+            },
+            "examples": [
+                [{
+                    "id": "19886",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-12-01T00:00:00.389Z",
+                    "validTo": "2023-02-28T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "AMTDM20",
+                    "termsAndConditions": "1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/qns7nnebxyd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=19886\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 11,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1633",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF20",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/7f3cxjm4yjd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1633\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 6,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1712",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF15",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/c50whdpob9d1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1712\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 3,
+                    "redeemedCount": 0
+                },
+                {
+                    "id": "1597",
+                    "name": "Get exclusive offers on Newchic",
+                    "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "validFrom": "2021-05-26T00:00:00.389Z",
+                    "validTo": "2023-04-30T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": true,
+                    "offerActive": true,
+                    "cashbackValue": 12.0,
+                    "currency": "USD",
+                    "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+                    "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+                    "offerSource": "Admitad",
+                    "offerStatus": "active",
+                    "offerType": "online coupon",
+                    "payoutType": "cpa_percentage",
+                    "redemptionCode": "NCAFF25",
+                    "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+                    "url": "https://ad.admitad.com/g/luljs3wmayd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1597\u0026subid3=crayon",
+                    "claimed": false,
+                    "redeemed": false,
+                    "claimedCount": 5,
+                    "redeemedCount": 0
+                }]
+            ]
+        },
+        "tags": {
+            "type": "array",
+            "default": [],
+            "title": "The tags Schema",
+            "items": {
+                "type": "string",
+                "title": "A Schema",
+                "examples": [
+                    "regular-retail-store",
+                    "home-and-kitchen",
+                    "online",
+                    "home-furnishings",
+                    "apparel-and-accessories",
+                    "international",
+                    "pet-supplies",
+                    "accessories-store",
+                    "pet-and-pet-supplies",
+                    "footwear-store",
+                    "delivery-service",
+                    "basic-service"
+                ]
+            },
+            "examples": [
+                ["regular-retail-store",
+                    "home-and-kitchen",
+                    "online",
+                    "home-furnishings",
+                    "apparel-and-accessories",
+                    "international",
+                    "pet-supplies",
+                    "accessories-store",
+                    "pet-and-pet-supplies",
+                    "footwear-store",
+                    "delivery-service",
+                    "basic-service"
+                ]
+            ]
+        },
+        "cities": {
+            "type": "array",
+            "default": [],
+            "title": "The cities Schema",
+            "items": {
+                "type": "string",
+                "default": "",
+                "title": "A Schema",
+                "examples": [
+                    "all"
+                ]
+            },
+            "examples": [
+                [
+                    "all"]
+            ]
+        },
+        "isOnline": {
+            "type": "boolean",
+            "default": false,
+            "title": "The isOnline Schema",
+            "examples": [
+                true
+            ]
+        },
+        "merchantType": {
+            "type": "array",
+            "default": [],
+            "title": "The merchantType Schema",
+            "items": {
+                "type": "string",
+                "default": "",
+                "title": "A Schema",
+                "examples": [
+                    "online"
+                ]
+            },
+            "examples": [
+                [
+                    "online"]
+            ]
+        },
+        "isHyperLocal": {
+            "type": "boolean",
+            "default": false,
+            "title": "The isHyperLocal Schema",
+            "examples": [
+                false
+            ]
+        },
+        "curatedImage": {
+            "type": "string",
+            "default": "",
+            "title": "The curatedImage Schema",
+            "examples": [
+                "https://dpimages.crayondata.com/high-res-image/resized/offer/AD58_1_Newchic_New_Image.jpg"
+            ]
+        },
+        "dominantColorCode": {
+            "type": "string",
+            "default": "",
+            "title": "The dominantColorCode Schema",
+            "examples": [
+                "#f0f0f0"
+            ]
+        },
+        "externalId": {
+            "type": "string",
+            "default": "",
+            "title": "The externalId Schema",
+            "examples": [
+                "AD58"
+            ]
+        },
+        "image": {
+            "type": "string",
+            "default": "",
+            "title": "The image Schema",
+            "examples": [
+                "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png"
+            ]
+        },
+        "url": {
+            "type": "string",
+            "default": "",
+            "title": "The url Schema",
+            "examples": [
+                "http://www.newchic.com/"
+            ]
+        },
+        "tasteMatchScoreReason": {
+            "type": "string",
+            "default": "",
+            "title": "The tasteMatchScoreReason Schema",
+            "examples": [
+                "Because you like international brands, you might like this too"
+            ]
+        },
+        "tasteMatchScore": {
+            "type": "integer",
+            "default": 0,
+            "title": "The tasteMatchScore Schema",
+            "examples": [
+                72
+            ]
+        },
+        "liked": {
+            "type": "boolean",
+            "default": false,
+            "title": "The liked Schema",
+            "examples": [
+                false
+            ]
+        },
+        "wishlisted": {
+            "type": "boolean",
+            "default": false,
+            "title": "The wishlisted Schema",
+            "examples": [
+                false
+            ]
+        }
+    },
+    "examples": [{
+        "id": "634ea784-f4a6-4d02-8cda-0374e53823d6",
+        "name": "Newchic",
+        "description": "Discover your Most Fashionable Collocation with Newchic. Shop The Latest Trends. Our range of products include Clothing \u0026 Shoes \u0026 Home Garden \u0026 Accessories and so on.",
+        "category": "apparel and accessories",
+        "active": true,
+        "offers": [{
+            "id": "19886",
+            "name": "Get exclusive offers on Newchic",
+            "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "validFrom": "2021-12-01T00:00:00.389Z",
+            "validTo": "2023-02-28T23:59:59.389Z",
+            "partner": true,
+            "isOnline": true,
+            "offerActive": true,
+            "cashbackValue": 12.0,
+            "currency": "USD",
+            "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+            "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+            "offerSource": "Admitad",
+            "offerStatus": "active",
+            "offerType": "online coupon",
+            "payoutType": "cpa_percentage",
+            "redemptionCode": "AMTDM20",
+            "termsAndConditions": "1. The offer is valid upto 2022-02-28\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Marketplaces including Chinese Stores, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "url": "https://ad.admitad.com/g/qns7nnebxyd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=19886\u0026subid3=crayon",
+            "claimed": false,
+            "redeemed": false,
+            "claimedCount": 11,
+            "redeemedCount": 0
+        },
+        {
+            "id": "1633",
+            "name": "Get exclusive offers on Newchic",
+            "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "validFrom": "2021-05-26T00:00:00.389Z",
+            "validTo": "2023-04-30T23:59:59.389Z",
+            "partner": true,
+            "isOnline": true,
+            "offerActive": true,
+            "cashbackValue": 12.0,
+            "currency": "USD",
+            "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+            "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+            "offerSource": "Admitad",
+            "offerStatus": "active",
+            "offerType": "online coupon",
+            "payoutType": "cpa_percentage",
+            "redemptionCode": "NCAFF20",
+            "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "url": "https://ad.admitad.com/g/7f3cxjm4yjd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1633\u0026subid3=crayon",
+            "claimed": false,
+            "redeemed": false,
+            "claimedCount": 6,
+            "redeemedCount": 0
+        },
+        {
+            "id": "1712",
+            "name": "Get exclusive offers on Newchic",
+            "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "validFrom": "2021-05-26T00:00:00.389Z",
+            "validTo": "2023-04-30T23:59:59.389Z",
+            "partner": true,
+            "isOnline": true,
+            "offerActive": true,
+            "cashbackValue": 12.0,
+            "currency": "USD",
+            "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+            "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+            "offerSource": "Admitad",
+            "offerStatus": "active",
+            "offerType": "online coupon",
+            "payoutType": "cpa_percentage",
+            "redemptionCode": "NCAFF15",
+            "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "url": "https://ad.admitad.com/g/c50whdpob9d1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1712\u0026subid3=crayon",
+            "claimed": false,
+            "redeemed": false,
+            "claimedCount": 3,
+            "redeemedCount": 0
+        },
+        {
+            "id": "1597",
+            "name": "Get exclusive offers on Newchic",
+            "description": "Get exclusive offers on Newchic\n1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "validFrom": "2021-05-26T00:00:00.389Z",
+            "validTo": "2023-04-30T23:59:59.389Z",
+            "partner": true,
+            "isOnline": true,
+            "offerActive": true,
+            "cashbackValue": 12.0,
+            "currency": "USD",
+            "howToRedeem": "1. Click on 'Claim' at the bottom of the Offer Page.\n2. Click on 'Redeem Now' to get redirected to the merchant website.\n3. Make sure the product you purchase is valid under offer T\u0026C\n4. The offer discount will be already applied at the merchant website\n5. Make the payment using the valid bank card",
+            "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+            "offerSource": "Admitad",
+            "offerStatus": "active",
+            "offerType": "online coupon",
+            "payoutType": "cpa_percentage",
+            "redemptionCode": "NCAFF25",
+            "termsAndConditions": "1. The offer is valid upto 2022-04-30\n2. The offer is valid for Accessories \u0026 Bags, , Shoes, Clothing only\n3. The offer is applicable for Desktop / Web\n4. The offer is valid on all users only\n5. The offer is applicable for crayon card users only\n6. The offer is applicable at online\n7. Accidental Loss of coupon shall not be covered \n8. Coupons are not transferable \n9. Coupons cannot be replaced if emails are deleted by the claimant\n10.Customer is redirected to third party website – Terms of third party website will be applicable on the shopping experience\n11.The offer is applicable on select categories/products ONLY\n12.The coupon will be auto applied on the merchant website and only using the offer link the discount will be applied.",
+            "url": "https://ad.admitad.com/g/luljs3wmayd1931805363442850f04/?i=3\u0026subid=0005e4bf-189d-49d0-8887-ab7cb9fde111\u0026subid1=AD58\u0026subid2=1597\u0026subid3=crayon",
+            "claimed": false,
+            "redeemed": false,
+            "claimedCount": 5,
+            "redeemedCount": 0
+        }],
+        "tags": [
+            "regular-retail-store",
+            "home-and-kitchen",
+            "online",
+            "home-furnishings",
+            "apparel-and-accessories",
+            "international",
+            "pet-supplies",
+            "accessories-store",
+            "pet-and-pet-supplies",
+            "footwear-store",
+            "delivery-service",
+            "basic-service"
+        ],
+        "cities": [
+            "all"
+        ],
+        "isOnline": true,
+        "merchantType": [
+            "online"
+        ],
+        "isHyperLocal": false,
+        "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/AD58_1_Newchic_New_Image.jpg",
+        "dominantColorCode": "#f0f0f0",
+        "externalId": "AD58",
+        "image": "http://cdn.admitad.com/campaign/images/2020/9/30/15671-1402d334aba57d66.png",
+        "url": "http://www.newchic.com/",
+        "tasteMatchScoreReason": "Because you like international brands, you might like this too",
+        "tasteMatchScore": 72,
+        "liked": false,
+        "wishlisted": false
+    }]
+}

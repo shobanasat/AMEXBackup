@@ -1,0 +1,405 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome5",
+    "definitions": {
+        "Welcome5": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "choices": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Choice"
+                    }
+                },
+                "categories": {
+                    "type": "null"
+                }
+            },
+            "required": [
+                "categories",
+                "choices",
+                "id"
+            ],
+            "title": "Welcome5"
+        },
+        "Choice": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "listName": {
+                    "type": "string"
+                },
+                "listType": {
+                    "type": "string"
+                },
+                "totalCount": {
+                    "type": "integer"
+                },
+                "items": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ItemElement"
+                    }
+                },
+                "created": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "created",
+                "id",
+                "items",
+                "listName",
+                "listType",
+                "totalCount"
+            ],
+            "title": "Choice"
+        },
+        "ItemElement": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "item": {
+                    "$ref": "#/definitions/ItemItem"
+                },
+                "wishlisted": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "item",
+                "wishlisted"
+            ],
+            "title": "ItemElement"
+        },
+        "ItemItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "active": {
+                    "type": "boolean"
+                },
+                "properties": {
+                    "$ref": "#/definitions/ItemProperties"
+                },
+                "offers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Offer"
+                    }
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cities": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "isOnline": {
+                    "type": "boolean"
+                },
+                "merchantType": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "isHyperLocal": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "active",
+                "category",
+                "cities",
+                "description",
+                "id",
+                "isHyperLocal",
+                "isOnline",
+                "merchantType",
+                "name",
+                "offers",
+                "properties",
+                "tags"
+            ],
+            "title": "ItemItem"
+        },
+        "Offer": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "validFrom": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "validTo": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "partner": {
+                    "type": "boolean"
+                },
+                "isOnline": {
+                    "type": "boolean"
+                },
+                "offerActive": {
+                    "type": "boolean"
+                },
+                "properties": {
+                    "$ref": "#/definitions/OfferProperties"
+                }
+            },
+            "required": [
+                "description",
+                "id",
+                "isOnline",
+                "name",
+                "offerActive",
+                "partner",
+                "properties",
+                "validFrom",
+                "validTo"
+            ],
+            "title": "Offer"
+        },
+        "OfferProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cashbackValue": {
+                    "type": "number"
+                },
+                "curatedOfferImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "currency": {
+                    "$ref": "#/definitions/Currency"
+                },
+                "howToRedeem": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "offerSource": {
+                    "$ref": "#/definitions/OfferSource"
+                },
+                "offerStatus": {
+                    "$ref": "#/definitions/OfferStatus"
+                },
+                "offerType": {
+                    "$ref": "#/definitions/OfferType"
+                },
+                "payoutType": {
+                    "$ref": "#/definitions/PayoutType"
+                },
+                "termsAndConditions": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "claimed": {
+                    "type": "boolean"
+                },
+                "redeemed": {
+                    "type": "boolean"
+                },
+                "redemptionCode": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "cashbackValue",
+                "claimed",
+                "curatedOfferImage",
+                "currency",
+                "howToRedeem",
+                "image",
+                "offerSource",
+                "offerStatus",
+                "offerType",
+                "payoutType",
+                "redeemed",
+                "termsAndConditions",
+                "url"
+            ],
+            "title": "OfferProperties"
+        },
+        "ItemProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "brandLogo": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "curatedImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "dominantColorCode": {
+                    "type": "string"
+                },
+                "externalId": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "merchantBannerImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "http",
+                        "https"
+                    ]
+                },
+                "tasteMatchScore": {
+                    "type": "integer"
+                },
+                "distance": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "curatedImage",
+                "distance",
+                "dominantColorCode",
+                "externalId",
+                "image",
+                "tasteMatchScore",
+                "url"
+            ],
+            "title": "ItemProperties"
+        },
+        "Currency": {
+            "type": "string",
+            "enum": [
+                "",
+                "AED"
+            ],
+            "title": "Currency"
+        },
+        "OfferSource": {
+            "type": "string",
+            "enum": [
+                "arabclicks",
+                "DCM"
+            ],
+            "title": "OfferSource"
+        },
+        "OfferStatus": {
+            "type": "string",
+            "enum": [
+                "active"
+            ],
+            "title": "OfferStatus"
+        },
+        "OfferType": {
+            "type": "string",
+            "enum": [
+                "online coupon",
+                "offline coupon",
+                "cashback"
+            ],
+            "title": "OfferType"
+        },
+        "PayoutType": {
+            "type": "string",
+            "enum": [
+                "cpa_flat",
+                "cpa_percentage"
+            ],
+            "title": "PayoutType"
+        }
+    }
+}

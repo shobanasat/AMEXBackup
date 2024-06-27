@@ -1,0 +1,4675 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "default": [],
+    "title": "Root Schema",
+    "items": {
+        "type": "object",
+        "title": "A Schema",
+        "required": [
+            "label",
+            "value",
+            "geoCode",
+            "countryLabel",
+            "countryValue",
+            "countryCode"
+        ],
+        "properties": {
+            "label": {
+                "type": "string",
+                "title": "The label Schema",
+                "examples": [
+                    "Aswan",
+                    "Abano Terme",
+                    "Abu Dhabi",
+                    "Aigle",
+                    "Ajman",
+                    "Al Ain",
+                    "Alanya",
+                    "Albufeira",
+                    "Alexandria",
+                    "Alif Dhaal Atoll",
+                    "Amman",
+                    "Amsterdam",
+                    "Annecy",
+                    "Antalya",
+                    "Arlington",
+                    "Athens",
+                    "Baa Atoll",
+                    "Bad Hofgastein",
+                    "Baku",
+                    "Bangkok",
+                    "Barcelona",
+                    "Basel",
+                    "Belgrade",
+                    "Beni Magd√ªl",
+                    "Berlin",
+                    "Bern",
+                    "Birmingham",
+                    "Blagnac",
+                    "Buraimi",
+                    "Bursa",
+                    "Cabo San Lucas",
+                    "Caen",
+                    "Cairo",
+                    "Cannes",
+                    "Casablanca",
+                    "Catania",
+                    "Chicago",
+                    "Como",
+                    "Davos",
+                    "Divonne-les-bains",
+                    "Doha",
+                    "Dorfgastein",
+                    "Dubai",
+                    "Dublin",
+                    "Edinburgh",
+                    "Engelberg",
+                    "Eureka",
+                    "Florence",
+                    "Fujairah",
+                    "Geneva",
+                    "Graz",
+                    "Grindelwald",
+                    "G√æza",
+                    "Heidelberg",
+                    "Hong Kong",
+                    "Hulhumale",
+                    "Hurghada",
+                    "Interlaken",
+                    "Istanbul",
+                    "Jeddah",
+                    "Karon",
+                    "Khobar",
+                    "Koniz",
+                    "Kyiv",
+                    "Kyrenia",
+                    "Larnaca",
+                    "Las Vegas",
+                    "Lausanne",
+                    "Lhaviyani Atoll",
+                    "Lisbon",
+                    "Liverpool",
+                    "London",
+                    "Los Angeles",
+                    "Luzern",
+                    "Lyon",
+                    "Madrid",
+                    "Male",
+                    "Marbella",
+                    "Marseille",
+                    "Mauregard",
+                    "Mecca",
+                    "Medina",
+                    "Melbourne",
+                    "Milan",
+                    "Modena",
+                    "Monaco",
+                    "Montreal",
+                    "Montreux",
+                    "Morges",
+                    "Moscow",
+                    "Mostar",
+                    "Mugla",
+                    "Munich",
+                    "M√ωkonos",
+                    "Nairobi",
+                    "Naples",
+                    "New York City",
+                    "Nice",
+                    "North Male Atoll",
+                    "Novosibirsk",
+                    "Orlando",
+                    "Palermo",
+                    "Paphos",
+                    "Paris",
+                    "Phuket",
+                    "Praslin Island",
+                    "Quarteira",
+                    "Rabat",
+                    "Ras Al Khaimah",
+                    "Riyadh",
+                    "Rome",
+                    "R√≥dos",
+                    "Saint Petersburg",
+                    "Saint-laurent-du-var",
+                    "Salzburg",
+                    "Samedan",
+                    "San Diego",
+                    "San Francisco",
+                    "San Jos√© Del Cabo",
+                    "Santorini",
+                    "Sarajevo",
+                    "Sciacca",
+                    "Seoul",
+                    "Sharjah",
+                    "Sharm El Sheikh",
+                    "Siem Reap",
+                    "Sochi",
+                    "South Male Atoll",
+                    "Stockholm",
+                    "Sydney",
+                    "Tampa",
+                    "Tangier",
+                    "Tbilisi",
+                    "Tepoztl√°n",
+                    "Toronto",
+                    "Trabzon",
+                    "Vancouver",
+                    "Venice",
+                    "Versailles",
+                    "Vienna",
+                    "Villeneuve",
+                    "Viry-ch√¢tillon",
+                    "Washington",
+                    "Yerevan",
+                    "Zanzibar City",
+                    "Zell Am See",
+                    "Zermatt",
+                    "Zurich"
+                ]
+            },
+            "value": {
+                "type": "string",
+                "title": "The value Schema",
+                "examples": [
+                    "Aswan",
+                    "Abano Terme",
+                    "Abu Dhabi",
+                    "Aigle",
+                    "Ajman",
+                    "Al Ain",
+                    "Alanya",
+                    "Albufeira",
+                    "Alexandria",
+                    "Alif Dhaal Atoll",
+                    "Amman",
+                    "Amsterdam",
+                    "Annecy",
+                    "Antalya",
+                    "Arlington",
+                    "Athens",
+                    "Baa Atoll",
+                    "Bad Hofgastein",
+                    "Baku",
+                    "Bangkok",
+                    "Barcelona",
+                    "Basel",
+                    "Belgrade",
+                    "Beni Magd√ªl",
+                    "Berlin",
+                    "Bern",
+                    "Birmingham",
+                    "Blagnac",
+                    "Buraimi",
+                    "Bursa",
+                    "Cabo San Lucas",
+                    "Caen",
+                    "Cairo",
+                    "Cannes",
+                    "Casablanca",
+                    "Catania",
+                    "Chicago",
+                    "Como",
+                    "Davos",
+                    "Divonne-les-bains",
+                    "Doha",
+                    "Dorfgastein",
+                    "Dubai",
+                    "Dublin",
+                    "Edinburgh",
+                    "Engelberg",
+                    "Eureka",
+                    "Florence",
+                    "Fujairah",
+                    "Geneva",
+                    "Graz",
+                    "Grindelwald",
+                    "G√æza",
+                    "Heidelberg",
+                    "Hong Kong",
+                    "Hulhumale",
+                    "Hurghada",
+                    "Interlaken",
+                    "Istanbul",
+                    "Jeddah",
+                    "Karon",
+                    "Khobar",
+                    "Koniz",
+                    "Kyiv",
+                    "Kyrenia",
+                    "Larnaca",
+                    "Las Vegas",
+                    "Lausanne",
+                    "Lhaviyani Atoll",
+                    "Lisbon",
+                    "Liverpool",
+                    "London",
+                    "Los Angeles",
+                    "Luzern",
+                    "Lyon",
+                    "Madrid",
+                    "Male",
+                    "Marbella",
+                    "Marseille",
+                    "Mauregard",
+                    "Mecca",
+                    "Medina",
+                    "Melbourne",
+                    "Milan",
+                    "Modena",
+                    "Monaco",
+                    "Montreal",
+                    "Montreux",
+                    "Morges",
+                    "Moscow",
+                    "Mostar",
+                    "Mugla",
+                    "Munich",
+                    "M√ωkonos",
+                    "Nairobi",
+                    "Naples",
+                    "New York City",
+                    "Nice",
+                    "North Male Atoll",
+                    "Novosibirsk",
+                    "Orlando",
+                    "Palermo",
+                    "Paphos",
+                    "Paris",
+                    "Phuket",
+                    "Praslin Island",
+                    "Quarteira",
+                    "Rabat",
+                    "Ras Al Khaimah",
+                    "Riyadh",
+                    "Rome",
+                    "R√≥dos",
+                    "Saint Petersburg",
+                    "Saint-laurent-du-var",
+                    "Salzburg",
+                    "Samedan",
+                    "San Diego",
+                    "San Francisco",
+                    "San Jos√© Del Cabo",
+                    "Santorini",
+                    "Sarajevo",
+                    "Sciacca",
+                    "Seoul",
+                    "Sharjah",
+                    "Sharm El Sheikh",
+                    "Siem Reap",
+                    "Sochi",
+                    "South Male Atoll",
+                    "Stockholm",
+                    "Sydney",
+                    "Tampa",
+                    "Tangier",
+                    "Tbilisi",
+                    "Tepoztl√°n",
+                    "Toronto",
+                    "Trabzon",
+                    "Vancouver",
+                    "Venice",
+                    "Versailles",
+                    "Vienna",
+                    "Villeneuve",
+                    "Viry-ch√¢tillon",
+                    "Washington",
+                    "Yerevan",
+                    "Zanzibar City",
+                    "Zell Am See",
+                    "Zermatt",
+                    "Zurich"
+                ]
+            },
+            "geoCode": {
+                "type": "object",
+                "title": "The geoCode Schema",
+                "required": [
+                    "latitude",
+                    "longitude"
+                ],
+                "properties": {
+                    "latitude": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "title": "The latitude Schema",
+                        "examples": [
+                            "24.09082",
+                            "45.35753",
+                            null,
+                            "46.3181",
+                            "25.40328",
+                            "36.54375",
+                            "37.08819",
+                            "31.20176",
+                            "31.95522",
+                            "52.37403",
+                            "45.90878",
+                            "36.90812",
+                            "37.98376",
+                            "47.17274",
+                            "40.37767",
+                            "13.75398",
+                            "41.38879",
+                            "47.554722",
+                            "44.80401",
+                            "52.52437",
+                            "46.94809",
+                            "52.48142",
+                            "43.63276",
+                            "24.225058",
+                            "40.19559",
+                            "22.89088",
+                            "49.18585",
+                            "30.06263",
+                            "43.55135",
+                            "33.5884",
+                            "37.47169",
+                            "45.80819",
+                            "46.80429",
+                            "46.3571",
+                            "25.28545",
+                            "47.24172",
+                            "25.0657",
+                            "53.33306",
+                            "55.95206",
+                            "46.82107",
+                            "43.77925",
+                            "47.06667",
+                            "46.62396",
+                            "49.40768",
+                            "4.21169",
+                            "27.25738",
+                            "46.68387",
+                            "21.54238",
+                            "21.54277778",
+                            "26.27944",
+                            "50.45466",
+                            "35.33634",
+                            "34.92291",
+                            "46.516",
+                            "38.71666667",
+                            "38.72635",
+                            "53.41058",
+                            "51.50853",
+                            "47.05048",
+                            "45.74846",
+                            "40.4165",
+                            "4.17521",
+                            "36.51543",
+                            "43.29695",
+                            "21.4225",
+                            "21.42664",
+                            "24.46861",
+                            "-37.814",
+                            "45.46427",
+                            "44.64783",
+                            "46.43301",
+                            "46.51127",
+                            "55.75222",
+                            "43.34333",
+                            "48.13743",
+                            "-1.28333",
+                            "40.85216",
+                            "43.70313",
+                            "55.0415",
+                            "37.81667",
+                            "34.77679",
+                            "48.8534",
+                            "7.89059",
+                            "37.06946",
+                            "34.01325",
+                            "25.46116",
+                            "24.68773",
+                            "41.89193",
+                            "59.93863",
+                            "43.67323",
+                            "47.79941",
+                            "46.53399",
+                            "43.84864",
+                            "37.50693",
+                            "37.566",
+                            "25.33737",
+                            "13.36179",
+                            "43.59917",
+                            "59.33258",
+                            "-33.86785",
+                            "35.76727",
+                            "41.69411",
+                            "43.70011",
+                            "41.005",
+                            "49.24966",
+                            "45.43713",
+                            "48.80359",
+                            "48.20849",
+                            "46.39869",
+                            "40.18111",
+                            "47.32556",
+                            "46.01998"
+                        ]
+                    },
+                    "longitude": {
+                        "type": [
+                            "string",
+                            "null"
+                        ],
+                        "title": "The longitude Schema",
+                        "examples": [
+                            "32.89942",
+                            "11.78725",
+                            null,
+                            "6.96457",
+                            "55.52341",
+                            "31.99982",
+                            "-8.2503",
+                            "29.91582",
+                            "35.94503",
+                            "4.88969",
+                            "6.12565",
+                            "30.69556",
+                            "23.72784",
+                            "13.09871",
+                            "49.89201",
+                            "100.50144",
+                            "2.15899",
+                            "7.590556",
+                            "20.46513",
+                            "13.41053",
+                            "7.44744",
+                            "-1.89983",
+                            "1.39399",
+                            "55.76629",
+                            "29.06013",
+                            "-109.91238",
+                            "-0.35912",
+                            "31.24967",
+                            "7.01275",
+                            "-7.55785",
+                            "14.84731",
+                            "9.0832",
+                            "9.83723",
+                            "6.13494",
+                            "51.53096",
+                            "13.10223",
+                            "55.17128",
+                            "-6.24889",
+                            "-3.19648",
+                            "8.40133",
+                            "11.24626",
+                            "15.45",
+                            "8.03601",
+                            "8.69079",
+                            "73.54008",
+                            "33.81291",
+                            "7.86638",
+                            "39.19797",
+                            "39.17277778",
+                            "50.20833",
+                            "30.5238",
+                            "33.31729",
+                            "33.6233",
+                            "6.63282",
+                            "-9.16666667",
+                            "-9.14843",
+                            "-2.97794",
+                            "-0.12574",
+                            "8.30635",
+                            "4.84671",
+                            "-3.70256",
+                            "73.50916",
+                            "-4.88583",
+                            "5.38107",
+                            "39.82611111",
+                            "39.82563",
+                            "39.61417",
+                            "144.96332",
+                            "9.18951",
+                            "10.92539",
+                            "6.91143",
+                            "6.49854",
+                            "37.61556",
+                            "17.80806",
+                            "11.57549",
+                            "36.81667",
+                            "14.26811",
+                            "7.26608",
+                            "82.9346",
+                            "13.58333",
+                            "32.42451",
+                            "2.3486",
+                            "98.3981",
+                            "-8.10064",
+                            "-6.83255",
+                            "56.04058",
+                            "46.72185",
+                            "12.51133",
+                            "30.31413",
+                            "7.19",
+                            "13.04399",
+                            "9.87276",
+                            "18.35644",
+                            "13.08399",
+                            "126.9784",
+                            "55.41206",
+                            "103.86056",
+                            "39.72569",
+                            "18.0649",
+                            "151.20732",
+                            "-5.79975",
+                            "44.83368",
+                            "-79.4163",
+                            "39.72694",
+                            "-123.11934",
+                            "12.33265",
+                            "2.13424",
+                            "16.37208",
+                            "6.92654",
+                            "44.51361",
+                            "12.79444",
+                            "7.74863"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "latitude": "24.09082",
+                    "longitude": "32.89942"
+                },
+                {
+                    "latitude": "45.35753",
+                    "longitude": "11.78725"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "46.3181",
+                    "longitude": "6.96457"
+                },
+                {
+                    "latitude": "25.40328",
+                    "longitude": "55.52341"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "36.54375",
+                    "longitude": "31.99982"
+                },
+                {
+                    "latitude": "37.08819",
+                    "longitude": "-8.2503"
+                },
+                {
+                    "latitude": "31.20176",
+                    "longitude": "29.91582"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "31.95522",
+                    "longitude": "35.94503"
+                },
+                {
+                    "latitude": "52.37403",
+                    "longitude": "4.88969"
+                },
+                {
+                    "latitude": "45.90878",
+                    "longitude": "6.12565"
+                },
+                {
+                    "latitude": "36.90812",
+                    "longitude": "30.69556"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "37.98376",
+                    "longitude": "23.72784"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "47.17274",
+                    "longitude": "13.09871"
+                },
+                {
+                    "latitude": "40.37767",
+                    "longitude": "49.89201"
+                },
+                {
+                    "latitude": "13.75398",
+                    "longitude": "100.50144"
+                },
+                {
+                    "latitude": "41.38879",
+                    "longitude": "2.15899"
+                },
+                {
+                    "latitude": "47.554722",
+                    "longitude": "7.590556"
+                },
+                {
+                    "latitude": "44.80401",
+                    "longitude": "20.46513"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "52.52437",
+                    "longitude": "13.41053"
+                },
+                {
+                    "latitude": "46.94809",
+                    "longitude": "7.44744"
+                },
+                {
+                    "latitude": "52.48142",
+                    "longitude": "-1.89983"
+                },
+                {
+                    "latitude": "43.63276",
+                    "longitude": "1.39399"
+                },
+                {
+                    "latitude": "24.225058",
+                    "longitude": "55.76629"
+                },
+                {
+                    "latitude": "40.19559",
+                    "longitude": "29.06013"
+                },
+                {
+                    "latitude": "22.89088",
+                    "longitude": "-109.91238"
+                },
+                {
+                    "latitude": "49.18585",
+                    "longitude": "-0.35912"
+                },
+                {
+                    "latitude": "30.06263",
+                    "longitude": "31.24967"
+                },
+                {
+                    "latitude": "43.55135",
+                    "longitude": "7.01275"
+                },
+                {
+                    "latitude": "33.5884",
+                    "longitude": "-7.55785"
+                },
+                {
+                    "latitude": "37.47169",
+                    "longitude": "14.84731"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "45.80819",
+                    "longitude": "9.0832"
+                },
+                {
+                    "latitude": "46.80429",
+                    "longitude": "9.83723"
+                },
+                {
+                    "latitude": "46.3571",
+                    "longitude": "6.13494"
+                },
+                {
+                    "latitude": "25.28545",
+                    "longitude": "51.53096"
+                },
+                {
+                    "latitude": "47.24172",
+                    "longitude": "13.10223"
+                },
+                {
+                    "latitude": "25.0657",
+                    "longitude": "55.17128"
+                },
+                {
+                    "latitude": "53.33306",
+                    "longitude": "-6.24889"
+                },
+                {
+                    "latitude": "55.95206",
+                    "longitude": "-3.19648"
+                },
+                {
+                    "latitude": "46.82107",
+                    "longitude": "8.40133"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "43.77925",
+                    "longitude": "11.24626"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "47.06667",
+                    "longitude": "15.45"
+                },
+                {
+                    "latitude": "46.62396",
+                    "longitude": "8.03601"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "49.40768",
+                    "longitude": "8.69079"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "4.21169",
+                    "longitude": "73.54008"
+                },
+                {
+                    "latitude": "27.25738",
+                    "longitude": "33.81291"
+                },
+                {
+                    "latitude": "46.68387",
+                    "longitude": "7.86638"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "21.54238",
+                    "longitude": "39.19797"
+                },
+                {
+                    "latitude": "21.54277778",
+                    "longitude": "39.17277778"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "26.27944",
+                    "longitude": "50.20833"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "50.45466",
+                    "longitude": "30.5238"
+                },
+                {
+                    "latitude": "35.33634",
+                    "longitude": "33.31729"
+                },
+                {
+                    "latitude": "34.92291",
+                    "longitude": "33.6233"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "46.516",
+                    "longitude": "6.63282"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "38.71666667",
+                    "longitude": "-9.16666667"
+                },
+                {
+                    "latitude": "38.72635",
+                    "longitude": "-9.14843"
+                },
+                {
+                    "latitude": "53.41058",
+                    "longitude": "-2.97794"
+                },
+                {
+                    "latitude": "51.50853",
+                    "longitude": "-0.12574"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "47.05048",
+                    "longitude": "8.30635"
+                },
+                {
+                    "latitude": "45.74846",
+                    "longitude": "4.84671"
+                },
+                {
+                    "latitude": "40.4165",
+                    "longitude": "-3.70256"
+                },
+                {
+                    "latitude": "4.17521",
+                    "longitude": "73.50916"
+                },
+                {
+                    "latitude": "36.51543",
+                    "longitude": "-4.88583"
+                },
+                {
+                    "latitude": "43.29695",
+                    "longitude": "5.38107"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "21.4225",
+                    "longitude": "39.82611111"
+                },
+                {
+                    "latitude": "21.42664",
+                    "longitude": "39.82563"
+                },
+                {
+                    "latitude": "24.46861",
+                    "longitude": "39.61417"
+                },
+                {
+                    "latitude": "-37.814",
+                    "longitude": "144.96332"
+                },
+                {
+                    "latitude": "45.46427",
+                    "longitude": "9.18951"
+                },
+                {
+                    "latitude": "44.64783",
+                    "longitude": "10.92539"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "46.43301",
+                    "longitude": "6.91143"
+                },
+                {
+                    "latitude": "46.51127",
+                    "longitude": "6.49854"
+                },
+                {
+                    "latitude": "55.75222",
+                    "longitude": "37.61556"
+                },
+                {
+                    "latitude": "43.34333",
+                    "longitude": "17.80806"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "48.13743",
+                    "longitude": "11.57549"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "-1.28333",
+                    "longitude": "36.81667"
+                },
+                {
+                    "latitude": "40.85216",
+                    "longitude": "14.26811"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "43.70313",
+                    "longitude": "7.26608"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "55.0415",
+                    "longitude": "82.9346"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "37.81667",
+                    "longitude": "13.58333"
+                },
+                {
+                    "latitude": "34.77679",
+                    "longitude": "32.42451"
+                },
+                {
+                    "latitude": "48.8534",
+                    "longitude": "2.3486"
+                },
+                {
+                    "latitude": "7.89059",
+                    "longitude": "98.3981"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "37.06946",
+                    "longitude": "-8.10064"
+                },
+                {
+                    "latitude": "34.01325",
+                    "longitude": "-6.83255"
+                },
+                {
+                    "latitude": "25.46116",
+                    "longitude": "56.04058"
+                },
+                {
+                    "latitude": "24.68773",
+                    "longitude": "46.72185"
+                },
+                {
+                    "latitude": "41.89193",
+                    "longitude": "12.51133"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "59.93863",
+                    "longitude": "30.31413"
+                },
+                {
+                    "latitude": "43.67323",
+                    "longitude": "7.19"
+                },
+                {
+                    "latitude": "47.79941",
+                    "longitude": "13.04399"
+                },
+                {
+                    "latitude": "46.53399",
+                    "longitude": "9.87276"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "43.84864",
+                    "longitude": "18.35644"
+                },
+                {
+                    "latitude": "37.50693",
+                    "longitude": "13.08399"
+                },
+                {
+                    "latitude": "37.566",
+                    "longitude": "126.9784"
+                },
+                {
+                    "latitude": "25.33737",
+                    "longitude": "55.41206"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "13.36179",
+                    "longitude": "103.86056"
+                },
+                {
+                    "latitude": "43.59917",
+                    "longitude": "39.72569"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "59.33258",
+                    "longitude": "18.0649"
+                },
+                {
+                    "latitude": "-33.86785",
+                    "longitude": "151.20732"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "35.76727",
+                    "longitude": "-5.79975"
+                },
+                {
+                    "latitude": "41.69411",
+                    "longitude": "44.83368"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "43.70011",
+                    "longitude": "-79.4163"
+                },
+                {
+                    "latitude": "41.005",
+                    "longitude": "39.72694"
+                },
+                {
+                    "latitude": "49.24966",
+                    "longitude": "-123.11934"
+                },
+                {
+                    "latitude": "45.43713",
+                    "longitude": "12.33265"
+                },
+                {
+                    "latitude": "48.80359",
+                    "longitude": "2.13424"
+                },
+                {
+                    "latitude": "48.20849",
+                    "longitude": "16.37208"
+                },
+                {
+                    "latitude": "46.39869",
+                    "longitude": "6.92654"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "40.18111",
+                    "longitude": "44.51361"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                },
+                {
+                    "latitude": "47.32556",
+                    "longitude": "12.79444"
+                },
+                {
+                    "latitude": "46.01998",
+                    "longitude": "7.74863"
+                },
+                {
+                    "latitude": null,
+                    "longitude": null
+                }]
+            },
+            "countryLabel": {
+                "type": "string",
+                "title": "The countryLabel Schema",
+                "examples": [
+                    "Egypt",
+                    "Italy",
+                    "United Arab Emirates",
+                    "Switzerland",
+                    "Turkey",
+                    "Portugal",
+                    "Maldives",
+                    "Jordan",
+                    "Netherlands",
+                    "France",
+                    "United States Of America",
+                    "Greece",
+                    "Austria",
+                    "Azerbaijan",
+                    "Thailand",
+                    "Spain",
+                    "Serbia",
+                    "Germany",
+                    "United Kingdom",
+                    "Oman",
+                    "Mexico",
+                    "Morocco",
+                    "Qatar",
+                    "Ireland",
+                    "Hong Kong",
+                    "Saudi Arabia",
+                    "Ukraine",
+                    "Cyprus",
+                    "Australia",
+                    "Monaco",
+                    "Canada",
+                    "Russia",
+                    "Bosnia And Herzegovina",
+                    "Kenya",
+                    "Seychelles",
+                    "South Korea",
+                    "Cambodia",
+                    "Sweden",
+                    "Georgia",
+                    "Armenia",
+                    "Tanzania"
+                ]
+            },
+            "countryValue": {
+                "type": "string",
+                "title": "The countryValue Schema",
+                "examples": [
+                    "Egypt",
+                    "Italy",
+                    "United Arab Emirates",
+                    "Switzerland",
+                    "Turkey",
+                    "Portugal",
+                    "Maldives",
+                    "Jordan",
+                    "Netherlands",
+                    "France",
+                    "United States Of America",
+                    "Greece",
+                    "Austria",
+                    "Azerbaijan",
+                    "Thailand",
+                    "Spain",
+                    "Serbia",
+                    "Germany",
+                    "United Kingdom",
+                    "Oman",
+                    "Mexico",
+                    "Morocco",
+                    "Qatar",
+                    "Ireland",
+                    "Hong Kong",
+                    "Saudi Arabia",
+                    "Ukraine",
+                    "Cyprus",
+                    "Australia",
+                    "Monaco",
+                    "Canada",
+                    "Russia",
+                    "Bosnia And Herzegovina",
+                    "Kenya",
+                    "Seychelles",
+                    "South Korea",
+                    "Cambodia",
+                    "Sweden",
+                    "Georgia",
+                    "Armenia",
+                    "Tanzania"
+                ]
+            },
+            "countryCode": {
+                "type": "string",
+                "title": "The countryCode Schema",
+                "examples": [
+                    "EG",
+                    "IT",
+                    "AE",
+                    "CH",
+                    "TR",
+                    "PT",
+                    "MV",
+                    "JO",
+                    "NL",
+                    "FR",
+                    "US",
+                    "GR",
+                    "AT",
+                    "AZ",
+                    "TH",
+                    "ES",
+                    "RS",
+                    "DE",
+                    "GB",
+                    "MX",
+                    "MA",
+                    "QA",
+                    "IE",
+                    "HK",
+                    "SA",
+                    "UA",
+                    "CY",
+                    "AU",
+                    "MC",
+                    "CA",
+                    "RU",
+                    "BA",
+                    "KE",
+                    "SC",
+                    "KR",
+                    "KH",
+                    "SE",
+                    "GE",
+                    "AM",
+                    "TZ"
+                ]
+            }
+        },
+        "examples": [{
+            "label": "Aswan",
+            "value": "Aswan",
+            "geoCode": {
+                "latitude": "24.09082",
+                "longitude": "32.89942"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Abano Terme",
+            "value": "Abano Terme",
+            "geoCode": {
+                "latitude": "45.35753",
+                "longitude": "11.78725"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Abu Dhabi",
+            "value": "Abu Dhabi",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Aigle",
+            "value": "Aigle",
+            "geoCode": {
+                "latitude": "46.3181",
+                "longitude": "6.96457"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Ajman",
+            "value": "Ajman",
+            "geoCode": {
+                "latitude": "25.40328",
+                "longitude": "55.52341"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Al Ain",
+            "value": "Al Ain",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Alanya",
+            "value": "Alanya",
+            "geoCode": {
+                "latitude": "36.54375",
+                "longitude": "31.99982"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Albufeira",
+            "value": "Albufeira",
+            "geoCode": {
+                "latitude": "37.08819",
+                "longitude": "-8.2503"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Alexandria",
+            "value": "Alexandria",
+            "geoCode": {
+                "latitude": "31.20176",
+                "longitude": "29.91582"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Alif Dhaal Atoll",
+            "value": "Alif Dhaal Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Amman",
+            "value": "Amman",
+            "geoCode": {
+                "latitude": "31.95522",
+                "longitude": "35.94503"
+            },
+            "countryLabel": "Jordan",
+            "countryValue": "Jordan",
+            "countryCode": "JO"
+        },
+        {
+            "label": "Amsterdam",
+            "value": "Amsterdam",
+            "geoCode": {
+                "latitude": "52.37403",
+                "longitude": "4.88969"
+            },
+            "countryLabel": "Netherlands",
+            "countryValue": "Netherlands",
+            "countryCode": "NL"
+        },
+        {
+            "label": "Annecy",
+            "value": "Annecy",
+            "geoCode": {
+                "latitude": "45.90878",
+                "longitude": "6.12565"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Antalya",
+            "value": "Antalya",
+            "geoCode": {
+                "latitude": "36.90812",
+                "longitude": "30.69556"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Arlington",
+            "value": "Arlington",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Athens",
+            "value": "Athens",
+            "geoCode": {
+                "latitude": "37.98376",
+                "longitude": "23.72784"
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Athens",
+            "value": "Athens",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Baa Atoll",
+            "value": "Baa Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Bad Hofgastein",
+            "value": "Bad Hofgastein",
+            "geoCode": {
+                "latitude": "47.17274",
+                "longitude": "13.09871"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Baku",
+            "value": "Baku",
+            "geoCode": {
+                "latitude": "40.37767",
+                "longitude": "49.89201"
+            },
+            "countryLabel": "Azerbaijan",
+            "countryValue": "Azerbaijan",
+            "countryCode": "AZ"
+        },
+        {
+            "label": "Bangkok",
+            "value": "Bangkok",
+            "geoCode": {
+                "latitude": "13.75398",
+                "longitude": "100.50144"
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Barcelona",
+            "value": "Barcelona",
+            "geoCode": {
+                "latitude": "41.38879",
+                "longitude": "2.15899"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Basel",
+            "value": "Basel",
+            "geoCode": {
+                "latitude": "47.554722",
+                "longitude": "7.590556"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Belgrade",
+            "value": "Belgrade",
+            "geoCode": {
+                "latitude": "44.80401",
+                "longitude": "20.46513"
+            },
+            "countryLabel": "Serbia",
+            "countryValue": "Serbia",
+            "countryCode": "RS"
+        },
+        {
+            "label": "Beni Magd√ªl",
+            "value": "Beni Magd√ªl",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Berlin",
+            "value": "Berlin",
+            "geoCode": {
+                "latitude": "52.52437",
+                "longitude": "13.41053"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "Bern",
+            "value": "Bern",
+            "geoCode": {
+                "latitude": "46.94809",
+                "longitude": "7.44744"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Birmingham",
+            "value": "Birmingham",
+            "geoCode": {
+                "latitude": "52.48142",
+                "longitude": "-1.89983"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Blagnac",
+            "value": "Blagnac",
+            "geoCode": {
+                "latitude": "43.63276",
+                "longitude": "1.39399"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Buraimi",
+            "value": "Buraimi",
+            "geoCode": {
+                "latitude": "24.225058",
+                "longitude": "55.76629"
+            },
+            "countryLabel": "Oman",
+            "countryValue": "Oman",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Bursa",
+            "value": "Bursa",
+            "geoCode": {
+                "latitude": "40.19559",
+                "longitude": "29.06013"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Cabo San Lucas",
+            "value": "Cabo San Lucas",
+            "geoCode": {
+                "latitude": "22.89088",
+                "longitude": "-109.91238"
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Caen",
+            "value": "Caen",
+            "geoCode": {
+                "latitude": "49.18585",
+                "longitude": "-0.35912"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Cairo",
+            "value": "Cairo",
+            "geoCode": {
+                "latitude": "30.06263",
+                "longitude": "31.24967"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Cannes",
+            "value": "Cannes",
+            "geoCode": {
+                "latitude": "43.55135",
+                "longitude": "7.01275"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Casablanca",
+            "value": "Casablanca",
+            "geoCode": {
+                "latitude": "33.5884",
+                "longitude": "-7.55785"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Catania",
+            "value": "Catania",
+            "geoCode": {
+                "latitude": "37.47169",
+                "longitude": "14.84731"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Chicago",
+            "value": "Chicago",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Como",
+            "value": "Como",
+            "geoCode": {
+                "latitude": "45.80819",
+                "longitude": "9.0832"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Davos",
+            "value": "Davos",
+            "geoCode": {
+                "latitude": "46.80429",
+                "longitude": "9.83723"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Divonne-les-bains",
+            "value": "Divonne-les-bains",
+            "geoCode": {
+                "latitude": "46.3571",
+                "longitude": "6.13494"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Doha",
+            "value": "Doha",
+            "geoCode": {
+                "latitude": "25.28545",
+                "longitude": "51.53096"
+            },
+            "countryLabel": "Qatar",
+            "countryValue": "Qatar",
+            "countryCode": "QA"
+        },
+        {
+            "label": "Dorfgastein",
+            "value": "Dorfgastein",
+            "geoCode": {
+                "latitude": "47.24172",
+                "longitude": "13.10223"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Dubai",
+            "value": "Dubai",
+            "geoCode": {
+                "latitude": "25.0657",
+                "longitude": "55.17128"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Dublin",
+            "value": "Dublin",
+            "geoCode": {
+                "latitude": "53.33306",
+                "longitude": "-6.24889"
+            },
+            "countryLabel": "Ireland",
+            "countryValue": "Ireland",
+            "countryCode": "IE"
+        },
+        {
+            "label": "Edinburgh",
+            "value": "Edinburgh",
+            "geoCode": {
+                "latitude": "55.95206",
+                "longitude": "-3.19648"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Engelberg",
+            "value": "Engelberg",
+            "geoCode": {
+                "latitude": "46.82107",
+                "longitude": "8.40133"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Eureka",
+            "value": "Eureka",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Florence",
+            "value": "Florence",
+            "geoCode": {
+                "latitude": "43.77925",
+                "longitude": "11.24626"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Fujairah",
+            "value": "Fujairah",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Geneva",
+            "value": "Geneva",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Graz",
+            "value": "Graz",
+            "geoCode": {
+                "latitude": "47.06667",
+                "longitude": "15.45"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Grindelwald",
+            "value": "Grindelwald",
+            "geoCode": {
+                "latitude": "46.62396",
+                "longitude": "8.03601"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "G√æza",
+            "value": "G√æza",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Heidelberg",
+            "value": "Heidelberg",
+            "geoCode": {
+                "latitude": "49.40768",
+                "longitude": "8.69079"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "Hong Kong",
+            "value": "Hong Kong",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Hong Kong",
+            "countryValue": "Hong Kong",
+            "countryCode": "HK"
+        },
+        {
+            "label": "Hulhumale",
+            "value": "Hulhumale",
+            "geoCode": {
+                "latitude": "4.21169",
+                "longitude": "73.54008"
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Hurghada",
+            "value": "Hurghada",
+            "geoCode": {
+                "latitude": "27.25738",
+                "longitude": "33.81291"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Interlaken",
+            "value": "Interlaken",
+            "geoCode": {
+                "latitude": "46.68387",
+                "longitude": "7.86638"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Istanbul",
+            "value": "Istanbul",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Jeddah",
+            "value": "Jeddah",
+            "geoCode": {
+                "latitude": "21.54238",
+                "longitude": "39.19797"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Jeddah",
+            "value": "Jeddah",
+            "geoCode": {
+                "latitude": "21.54277778",
+                "longitude": "39.17277778"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Karon",
+            "value": "Karon",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Khobar",
+            "value": "Khobar",
+            "geoCode": {
+                "latitude": "26.27944",
+                "longitude": "50.20833"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Koniz",
+            "value": "Koniz",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Kyiv",
+            "value": "Kyiv",
+            "geoCode": {
+                "latitude": "50.45466",
+                "longitude": "30.5238"
+            },
+            "countryLabel": "Ukraine",
+            "countryValue": "Ukraine",
+            "countryCode": "UA"
+        },
+        {
+            "label": "Kyrenia",
+            "value": "Kyrenia",
+            "geoCode": {
+                "latitude": "35.33634",
+                "longitude": "33.31729"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Larnaca",
+            "value": "Larnaca",
+            "geoCode": {
+                "latitude": "34.92291",
+                "longitude": "33.6233"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Las Vegas",
+            "value": "Las Vegas",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Lausanne",
+            "value": "Lausanne",
+            "geoCode": {
+                "latitude": "46.516",
+                "longitude": "6.63282"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Lhaviyani Atoll",
+            "value": "Lhaviyani Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Lisbon",
+            "value": "Lisbon",
+            "geoCode": {
+                "latitude": "38.71666667",
+                "longitude": "-9.16666667"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Lisbon",
+            "value": "Lisbon",
+            "geoCode": {
+                "latitude": "38.72635",
+                "longitude": "-9.14843"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Liverpool",
+            "value": "Liverpool",
+            "geoCode": {
+                "latitude": "53.41058",
+                "longitude": "-2.97794"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "London",
+            "value": "London",
+            "geoCode": {
+                "latitude": "51.50853",
+                "longitude": "-0.12574"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Los Angeles",
+            "value": "Los Angeles",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Luzern",
+            "value": "Luzern",
+            "geoCode": {
+                "latitude": "47.05048",
+                "longitude": "8.30635"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Lyon",
+            "value": "Lyon",
+            "geoCode": {
+                "latitude": "45.74846",
+                "longitude": "4.84671"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Madrid",
+            "value": "Madrid",
+            "geoCode": {
+                "latitude": "40.4165",
+                "longitude": "-3.70256"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Male",
+            "value": "Male",
+            "geoCode": {
+                "latitude": "4.17521",
+                "longitude": "73.50916"
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Marbella",
+            "value": "Marbella",
+            "geoCode": {
+                "latitude": "36.51543",
+                "longitude": "-4.88583"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Marseille",
+            "value": "Marseille",
+            "geoCode": {
+                "latitude": "43.29695",
+                "longitude": "5.38107"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Mauregard",
+            "value": "Mauregard",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Mecca",
+            "value": "Mecca",
+            "geoCode": {
+                "latitude": "21.4225",
+                "longitude": "39.82611111"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Mecca",
+            "value": "Mecca",
+            "geoCode": {
+                "latitude": "21.42664",
+                "longitude": "39.82563"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Medina",
+            "value": "Medina",
+            "geoCode": {
+                "latitude": "24.46861",
+                "longitude": "39.61417"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Melbourne",
+            "value": "Melbourne",
+            "geoCode": {
+                "latitude": "-37.814",
+                "longitude": "144.96332"
+            },
+            "countryLabel": "Australia",
+            "countryValue": "Australia",
+            "countryCode": "AU"
+        },
+        {
+            "label": "Milan",
+            "value": "Milan",
+            "geoCode": {
+                "latitude": "45.46427",
+                "longitude": "9.18951"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Modena",
+            "value": "Modena",
+            "geoCode": {
+                "latitude": "44.64783",
+                "longitude": "10.92539"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Monaco",
+            "value": "Monaco",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Monaco",
+            "countryValue": "Monaco",
+            "countryCode": "MC"
+        },
+        {
+            "label": "Montreal",
+            "value": "Montreal",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Montreux",
+            "value": "Montreux",
+            "geoCode": {
+                "latitude": "46.43301",
+                "longitude": "6.91143"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Morges",
+            "value": "Morges",
+            "geoCode": {
+                "latitude": "46.51127",
+                "longitude": "6.49854"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Moscow",
+            "value": "Moscow",
+            "geoCode": {
+                "latitude": "55.75222",
+                "longitude": "37.61556"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Mostar",
+            "value": "Mostar",
+            "geoCode": {
+                "latitude": "43.34333",
+                "longitude": "17.80806"
+            },
+            "countryLabel": "Bosnia And Herzegovina",
+            "countryValue": "Bosnia And Herzegovina",
+            "countryCode": "BA"
+        },
+        {
+            "label": "Mugla",
+            "value": "Mugla",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Munich",
+            "value": "Munich",
+            "geoCode": {
+                "latitude": "48.13743",
+                "longitude": "11.57549"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "M√ωkonos",
+            "value": "M√ωkonos",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Nairobi",
+            "value": "Nairobi",
+            "geoCode": {
+                "latitude": "-1.28333",
+                "longitude": "36.81667"
+            },
+            "countryLabel": "Kenya",
+            "countryValue": "Kenya",
+            "countryCode": "KE"
+        },
+        {
+            "label": "Naples",
+            "value": "Naples",
+            "geoCode": {
+                "latitude": "40.85216",
+                "longitude": "14.26811"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "New York City",
+            "value": "New York City",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Nice",
+            "value": "Nice",
+            "geoCode": {
+                "latitude": "43.70313",
+                "longitude": "7.26608"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "North Male Atoll",
+            "value": "North Male Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Novosibirsk",
+            "value": "Novosibirsk",
+            "geoCode": {
+                "latitude": "55.0415",
+                "longitude": "82.9346"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Orlando",
+            "value": "Orlando",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Palermo",
+            "value": "Palermo",
+            "geoCode": {
+                "latitude": "37.81667",
+                "longitude": "13.58333"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Paphos",
+            "value": "Paphos",
+            "geoCode": {
+                "latitude": "34.77679",
+                "longitude": "32.42451"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Paris",
+            "value": "Paris",
+            "geoCode": {
+                "latitude": "48.8534",
+                "longitude": "2.3486"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Phuket",
+            "value": "Phuket",
+            "geoCode": {
+                "latitude": "7.89059",
+                "longitude": "98.3981"
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Praslin Island",
+            "value": "Praslin Island",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Seychelles",
+            "countryValue": "Seychelles",
+            "countryCode": "SC"
+        },
+        {
+            "label": "Quarteira",
+            "value": "Quarteira",
+            "geoCode": {
+                "latitude": "37.06946",
+                "longitude": "-8.10064"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Rabat",
+            "value": "Rabat",
+            "geoCode": {
+                "latitude": "34.01325",
+                "longitude": "-6.83255"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Ras Al Khaimah",
+            "value": "Ras Al Khaimah",
+            "geoCode": {
+                "latitude": "25.46116",
+                "longitude": "56.04058"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Riyadh",
+            "value": "Riyadh",
+            "geoCode": {
+                "latitude": "24.68773",
+                "longitude": "46.72185"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Rome",
+            "value": "Rome",
+            "geoCode": {
+                "latitude": "41.89193",
+                "longitude": "12.51133"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "R√≥dos",
+            "value": "R√≥dos",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Saint Petersburg",
+            "value": "Saint Petersburg",
+            "geoCode": {
+                "latitude": "59.93863",
+                "longitude": "30.31413"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Saint-laurent-du-var",
+            "value": "Saint-laurent-du-var",
+            "geoCode": {
+                "latitude": "43.67323",
+                "longitude": "7.19"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Salzburg",
+            "value": "Salzburg",
+            "geoCode": {
+                "latitude": "47.79941",
+                "longitude": "13.04399"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Samedan",
+            "value": "Samedan",
+            "geoCode": {
+                "latitude": "46.53399",
+                "longitude": "9.87276"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "San Diego",
+            "value": "San Diego",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "San Francisco",
+            "value": "San Francisco",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "San Jos√© Del Cabo",
+            "value": "San Jos√© Del Cabo",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Santorini",
+            "value": "Santorini",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Sarajevo",
+            "value": "Sarajevo",
+            "geoCode": {
+                "latitude": "43.84864",
+                "longitude": "18.35644"
+            },
+            "countryLabel": "Bosnia And Herzegovina",
+            "countryValue": "Bosnia And Herzegovina",
+            "countryCode": "BA"
+        },
+        {
+            "label": "Sciacca",
+            "value": "Sciacca",
+            "geoCode": {
+                "latitude": "37.50693",
+                "longitude": "13.08399"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Seoul",
+            "value": "Seoul",
+            "geoCode": {
+                "latitude": "37.566",
+                "longitude": "126.9784"
+            },
+            "countryLabel": "South Korea",
+            "countryValue": "South Korea",
+            "countryCode": "KR"
+        },
+        {
+            "label": "Sharjah",
+            "value": "Sharjah",
+            "geoCode": {
+                "latitude": "25.33737",
+                "longitude": "55.41206"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Sharm El Sheikh",
+            "value": "Sharm El Sheikh",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Siem Reap",
+            "value": "Siem Reap",
+            "geoCode": {
+                "latitude": "13.36179",
+                "longitude": "103.86056"
+            },
+            "countryLabel": "Cambodia",
+            "countryValue": "Cambodia",
+            "countryCode": "KH"
+        },
+        {
+            "label": "Sochi",
+            "value": "Sochi",
+            "geoCode": {
+                "latitude": "43.59917",
+                "longitude": "39.72569"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "South Male Atoll",
+            "value": "South Male Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Stockholm",
+            "value": "Stockholm",
+            "geoCode": {
+                "latitude": "59.33258",
+                "longitude": "18.0649"
+            },
+            "countryLabel": "Sweden",
+            "countryValue": "Sweden",
+            "countryCode": "SE"
+        },
+        {
+            "label": "Sydney",
+            "value": "Sydney",
+            "geoCode": {
+                "latitude": "-33.86785",
+                "longitude": "151.20732"
+            },
+            "countryLabel": "Australia",
+            "countryValue": "Australia",
+            "countryCode": "AU"
+        },
+        {
+            "label": "Tampa",
+            "value": "Tampa",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Tangier",
+            "value": "Tangier",
+            "geoCode": {
+                "latitude": "35.76727",
+                "longitude": "-5.79975"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Tbilisi",
+            "value": "Tbilisi",
+            "geoCode": {
+                "latitude": "41.69411",
+                "longitude": "44.83368"
+            },
+            "countryLabel": "Georgia",
+            "countryValue": "Georgia",
+            "countryCode": "GE"
+        },
+        {
+            "label": "Tepoztl√°n",
+            "value": "Tepoztl√°n",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Toronto",
+            "value": "Toronto",
+            "geoCode": {
+                "latitude": "43.70011",
+                "longitude": "-79.4163"
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Trabzon",
+            "value": "Trabzon",
+            "geoCode": {
+                "latitude": "41.005",
+                "longitude": "39.72694"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Vancouver",
+            "value": "Vancouver",
+            "geoCode": {
+                "latitude": "49.24966",
+                "longitude": "-123.11934"
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Venice",
+            "value": "Venice",
+            "geoCode": {
+                "latitude": "45.43713",
+                "longitude": "12.33265"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Versailles",
+            "value": "Versailles",
+            "geoCode": {
+                "latitude": "48.80359",
+                "longitude": "2.13424"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Vienna",
+            "value": "Vienna",
+            "geoCode": {
+                "latitude": "48.20849",
+                "longitude": "16.37208"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Villeneuve",
+            "value": "Villeneuve",
+            "geoCode": {
+                "latitude": "46.39869",
+                "longitude": "6.92654"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Viry-ch√¢tillon",
+            "value": "Viry-ch√¢tillon",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Washington",
+            "value": "Washington",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Yerevan",
+            "value": "Yerevan",
+            "geoCode": {
+                "latitude": "40.18111",
+                "longitude": "44.51361"
+            },
+            "countryLabel": "Armenia",
+            "countryValue": "Armenia",
+            "countryCode": "AM"
+        },
+        {
+            "label": "Zanzibar City",
+            "value": "Zanzibar City",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Tanzania",
+            "countryValue": "Tanzania",
+            "countryCode": "TZ"
+        },
+        {
+            "label": "Zell Am See",
+            "value": "Zell Am See",
+            "geoCode": {
+                "latitude": "47.32556",
+                "longitude": "12.79444"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Zermatt",
+            "value": "Zermatt",
+            "geoCode": {
+                "latitude": "46.01998",
+                "longitude": "7.74863"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Zurich",
+            "value": "Zurich",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        }]
+    },
+    "examples": [
+        [{
+            "label": "Aswan",
+            "value": "Aswan",
+            "geoCode": {
+                "latitude": "24.09082",
+                "longitude": "32.89942"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Abano Terme",
+            "value": "Abano Terme",
+            "geoCode": {
+                "latitude": "45.35753",
+                "longitude": "11.78725"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Abu Dhabi",
+            "value": "Abu Dhabi",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Aigle",
+            "value": "Aigle",
+            "geoCode": {
+                "latitude": "46.3181",
+                "longitude": "6.96457"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Ajman",
+            "value": "Ajman",
+            "geoCode": {
+                "latitude": "25.40328",
+                "longitude": "55.52341"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Al Ain",
+            "value": "Al Ain",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Alanya",
+            "value": "Alanya",
+            "geoCode": {
+                "latitude": "36.54375",
+                "longitude": "31.99982"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Albufeira",
+            "value": "Albufeira",
+            "geoCode": {
+                "latitude": "37.08819",
+                "longitude": "-8.2503"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Alexandria",
+            "value": "Alexandria",
+            "geoCode": {
+                "latitude": "31.20176",
+                "longitude": "29.91582"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Alif Dhaal Atoll",
+            "value": "Alif Dhaal Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Amman",
+            "value": "Amman",
+            "geoCode": {
+                "latitude": "31.95522",
+                "longitude": "35.94503"
+            },
+            "countryLabel": "Jordan",
+            "countryValue": "Jordan",
+            "countryCode": "JO"
+        },
+        {
+            "label": "Amsterdam",
+            "value": "Amsterdam",
+            "geoCode": {
+                "latitude": "52.37403",
+                "longitude": "4.88969"
+            },
+            "countryLabel": "Netherlands",
+            "countryValue": "Netherlands",
+            "countryCode": "NL"
+        },
+        {
+            "label": "Annecy",
+            "value": "Annecy",
+            "geoCode": {
+                "latitude": "45.90878",
+                "longitude": "6.12565"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Antalya",
+            "value": "Antalya",
+            "geoCode": {
+                "latitude": "36.90812",
+                "longitude": "30.69556"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Arlington",
+            "value": "Arlington",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Athens",
+            "value": "Athens",
+            "geoCode": {
+                "latitude": "37.98376",
+                "longitude": "23.72784"
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Athens",
+            "value": "Athens",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Baa Atoll",
+            "value": "Baa Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Bad Hofgastein",
+            "value": "Bad Hofgastein",
+            "geoCode": {
+                "latitude": "47.17274",
+                "longitude": "13.09871"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Baku",
+            "value": "Baku",
+            "geoCode": {
+                "latitude": "40.37767",
+                "longitude": "49.89201"
+            },
+            "countryLabel": "Azerbaijan",
+            "countryValue": "Azerbaijan",
+            "countryCode": "AZ"
+        },
+        {
+            "label": "Bangkok",
+            "value": "Bangkok",
+            "geoCode": {
+                "latitude": "13.75398",
+                "longitude": "100.50144"
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Barcelona",
+            "value": "Barcelona",
+            "geoCode": {
+                "latitude": "41.38879",
+                "longitude": "2.15899"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Basel",
+            "value": "Basel",
+            "geoCode": {
+                "latitude": "47.554722",
+                "longitude": "7.590556"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Belgrade",
+            "value": "Belgrade",
+            "geoCode": {
+                "latitude": "44.80401",
+                "longitude": "20.46513"
+            },
+            "countryLabel": "Serbia",
+            "countryValue": "Serbia",
+            "countryCode": "RS"
+        },
+        {
+            "label": "Beni Magd√ªl",
+            "value": "Beni Magd√ªl",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Berlin",
+            "value": "Berlin",
+            "geoCode": {
+                "latitude": "52.52437",
+                "longitude": "13.41053"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "Bern",
+            "value": "Bern",
+            "geoCode": {
+                "latitude": "46.94809",
+                "longitude": "7.44744"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Birmingham",
+            "value": "Birmingham",
+            "geoCode": {
+                "latitude": "52.48142",
+                "longitude": "-1.89983"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Blagnac",
+            "value": "Blagnac",
+            "geoCode": {
+                "latitude": "43.63276",
+                "longitude": "1.39399"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Buraimi",
+            "value": "Buraimi",
+            "geoCode": {
+                "latitude": "24.225058",
+                "longitude": "55.76629"
+            },
+            "countryLabel": "Oman",
+            "countryValue": "Oman",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Bursa",
+            "value": "Bursa",
+            "geoCode": {
+                "latitude": "40.19559",
+                "longitude": "29.06013"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Cabo San Lucas",
+            "value": "Cabo San Lucas",
+            "geoCode": {
+                "latitude": "22.89088",
+                "longitude": "-109.91238"
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Caen",
+            "value": "Caen",
+            "geoCode": {
+                "latitude": "49.18585",
+                "longitude": "-0.35912"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Cairo",
+            "value": "Cairo",
+            "geoCode": {
+                "latitude": "30.06263",
+                "longitude": "31.24967"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Cannes",
+            "value": "Cannes",
+            "geoCode": {
+                "latitude": "43.55135",
+                "longitude": "7.01275"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Casablanca",
+            "value": "Casablanca",
+            "geoCode": {
+                "latitude": "33.5884",
+                "longitude": "-7.55785"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Catania",
+            "value": "Catania",
+            "geoCode": {
+                "latitude": "37.47169",
+                "longitude": "14.84731"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Chicago",
+            "value": "Chicago",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Como",
+            "value": "Como",
+            "geoCode": {
+                "latitude": "45.80819",
+                "longitude": "9.0832"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Davos",
+            "value": "Davos",
+            "geoCode": {
+                "latitude": "46.80429",
+                "longitude": "9.83723"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Divonne-les-bains",
+            "value": "Divonne-les-bains",
+            "geoCode": {
+                "latitude": "46.3571",
+                "longitude": "6.13494"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Doha",
+            "value": "Doha",
+            "geoCode": {
+                "latitude": "25.28545",
+                "longitude": "51.53096"
+            },
+            "countryLabel": "Qatar",
+            "countryValue": "Qatar",
+            "countryCode": "QA"
+        },
+        {
+            "label": "Dorfgastein",
+            "value": "Dorfgastein",
+            "geoCode": {
+                "latitude": "47.24172",
+                "longitude": "13.10223"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Dubai",
+            "value": "Dubai",
+            "geoCode": {
+                "latitude": "25.0657",
+                "longitude": "55.17128"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Dublin",
+            "value": "Dublin",
+            "geoCode": {
+                "latitude": "53.33306",
+                "longitude": "-6.24889"
+            },
+            "countryLabel": "Ireland",
+            "countryValue": "Ireland",
+            "countryCode": "IE"
+        },
+        {
+            "label": "Edinburgh",
+            "value": "Edinburgh",
+            "geoCode": {
+                "latitude": "55.95206",
+                "longitude": "-3.19648"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Engelberg",
+            "value": "Engelberg",
+            "geoCode": {
+                "latitude": "46.82107",
+                "longitude": "8.40133"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Eureka",
+            "value": "Eureka",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Florence",
+            "value": "Florence",
+            "geoCode": {
+                "latitude": "43.77925",
+                "longitude": "11.24626"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Fujairah",
+            "value": "Fujairah",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Geneva",
+            "value": "Geneva",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Graz",
+            "value": "Graz",
+            "geoCode": {
+                "latitude": "47.06667",
+                "longitude": "15.45"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Grindelwald",
+            "value": "Grindelwald",
+            "geoCode": {
+                "latitude": "46.62396",
+                "longitude": "8.03601"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "G√æza",
+            "value": "G√æza",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Heidelberg",
+            "value": "Heidelberg",
+            "geoCode": {
+                "latitude": "49.40768",
+                "longitude": "8.69079"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "Hong Kong",
+            "value": "Hong Kong",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Hong Kong",
+            "countryValue": "Hong Kong",
+            "countryCode": "HK"
+        },
+        {
+            "label": "Hulhumale",
+            "value": "Hulhumale",
+            "geoCode": {
+                "latitude": "4.21169",
+                "longitude": "73.54008"
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Hurghada",
+            "value": "Hurghada",
+            "geoCode": {
+                "latitude": "27.25738",
+                "longitude": "33.81291"
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Interlaken",
+            "value": "Interlaken",
+            "geoCode": {
+                "latitude": "46.68387",
+                "longitude": "7.86638"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Istanbul",
+            "value": "Istanbul",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Jeddah",
+            "value": "Jeddah",
+            "geoCode": {
+                "latitude": "21.54238",
+                "longitude": "39.19797"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Jeddah",
+            "value": "Jeddah",
+            "geoCode": {
+                "latitude": "21.54277778",
+                "longitude": "39.17277778"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Karon",
+            "value": "Karon",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Khobar",
+            "value": "Khobar",
+            "geoCode": {
+                "latitude": "26.27944",
+                "longitude": "50.20833"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Koniz",
+            "value": "Koniz",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Kyiv",
+            "value": "Kyiv",
+            "geoCode": {
+                "latitude": "50.45466",
+                "longitude": "30.5238"
+            },
+            "countryLabel": "Ukraine",
+            "countryValue": "Ukraine",
+            "countryCode": "UA"
+        },
+        {
+            "label": "Kyrenia",
+            "value": "Kyrenia",
+            "geoCode": {
+                "latitude": "35.33634",
+                "longitude": "33.31729"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Larnaca",
+            "value": "Larnaca",
+            "geoCode": {
+                "latitude": "34.92291",
+                "longitude": "33.6233"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Las Vegas",
+            "value": "Las Vegas",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Lausanne",
+            "value": "Lausanne",
+            "geoCode": {
+                "latitude": "46.516",
+                "longitude": "6.63282"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Lhaviyani Atoll",
+            "value": "Lhaviyani Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Lisbon",
+            "value": "Lisbon",
+            "geoCode": {
+                "latitude": "38.71666667",
+                "longitude": "-9.16666667"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Lisbon",
+            "value": "Lisbon",
+            "geoCode": {
+                "latitude": "38.72635",
+                "longitude": "-9.14843"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Liverpool",
+            "value": "Liverpool",
+            "geoCode": {
+                "latitude": "53.41058",
+                "longitude": "-2.97794"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "London",
+            "value": "London",
+            "geoCode": {
+                "latitude": "51.50853",
+                "longitude": "-0.12574"
+            },
+            "countryLabel": "United Kingdom",
+            "countryValue": "United Kingdom",
+            "countryCode": "GB"
+        },
+        {
+            "label": "Los Angeles",
+            "value": "Los Angeles",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Luzern",
+            "value": "Luzern",
+            "geoCode": {
+                "latitude": "47.05048",
+                "longitude": "8.30635"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Lyon",
+            "value": "Lyon",
+            "geoCode": {
+                "latitude": "45.74846",
+                "longitude": "4.84671"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Madrid",
+            "value": "Madrid",
+            "geoCode": {
+                "latitude": "40.4165",
+                "longitude": "-3.70256"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Male",
+            "value": "Male",
+            "geoCode": {
+                "latitude": "4.17521",
+                "longitude": "73.50916"
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Marbella",
+            "value": "Marbella",
+            "geoCode": {
+                "latitude": "36.51543",
+                "longitude": "-4.88583"
+            },
+            "countryLabel": "Spain",
+            "countryValue": "Spain",
+            "countryCode": "ES"
+        },
+        {
+            "label": "Marseille",
+            "value": "Marseille",
+            "geoCode": {
+                "latitude": "43.29695",
+                "longitude": "5.38107"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Mauregard",
+            "value": "Mauregard",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Mecca",
+            "value": "Mecca",
+            "geoCode": {
+                "latitude": "21.4225",
+                "longitude": "39.82611111"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Mecca",
+            "value": "Mecca",
+            "geoCode": {
+                "latitude": "21.42664",
+                "longitude": "39.82563"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Medina",
+            "value": "Medina",
+            "geoCode": {
+                "latitude": "24.46861",
+                "longitude": "39.61417"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Melbourne",
+            "value": "Melbourne",
+            "geoCode": {
+                "latitude": "-37.814",
+                "longitude": "144.96332"
+            },
+            "countryLabel": "Australia",
+            "countryValue": "Australia",
+            "countryCode": "AU"
+        },
+        {
+            "label": "Milan",
+            "value": "Milan",
+            "geoCode": {
+                "latitude": "45.46427",
+                "longitude": "9.18951"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Modena",
+            "value": "Modena",
+            "geoCode": {
+                "latitude": "44.64783",
+                "longitude": "10.92539"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Monaco",
+            "value": "Monaco",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Monaco",
+            "countryValue": "Monaco",
+            "countryCode": "MC"
+        },
+        {
+            "label": "Montreal",
+            "value": "Montreal",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Montreux",
+            "value": "Montreux",
+            "geoCode": {
+                "latitude": "46.43301",
+                "longitude": "6.91143"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Morges",
+            "value": "Morges",
+            "geoCode": {
+                "latitude": "46.51127",
+                "longitude": "6.49854"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Moscow",
+            "value": "Moscow",
+            "geoCode": {
+                "latitude": "55.75222",
+                "longitude": "37.61556"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Mostar",
+            "value": "Mostar",
+            "geoCode": {
+                "latitude": "43.34333",
+                "longitude": "17.80806"
+            },
+            "countryLabel": "Bosnia And Herzegovina",
+            "countryValue": "Bosnia And Herzegovina",
+            "countryCode": "BA"
+        },
+        {
+            "label": "Mugla",
+            "value": "Mugla",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Munich",
+            "value": "Munich",
+            "geoCode": {
+                "latitude": "48.13743",
+                "longitude": "11.57549"
+            },
+            "countryLabel": "Germany",
+            "countryValue": "Germany",
+            "countryCode": "DE"
+        },
+        {
+            "label": "M√ωkonos",
+            "value": "M√ωkonos",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Nairobi",
+            "value": "Nairobi",
+            "geoCode": {
+                "latitude": "-1.28333",
+                "longitude": "36.81667"
+            },
+            "countryLabel": "Kenya",
+            "countryValue": "Kenya",
+            "countryCode": "KE"
+        },
+        {
+            "label": "Naples",
+            "value": "Naples",
+            "geoCode": {
+                "latitude": "40.85216",
+                "longitude": "14.26811"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "New York City",
+            "value": "New York City",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Nice",
+            "value": "Nice",
+            "geoCode": {
+                "latitude": "43.70313",
+                "longitude": "7.26608"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "North Male Atoll",
+            "value": "North Male Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Novosibirsk",
+            "value": "Novosibirsk",
+            "geoCode": {
+                "latitude": "55.0415",
+                "longitude": "82.9346"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Orlando",
+            "value": "Orlando",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Palermo",
+            "value": "Palermo",
+            "geoCode": {
+                "latitude": "37.81667",
+                "longitude": "13.58333"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Paphos",
+            "value": "Paphos",
+            "geoCode": {
+                "latitude": "34.77679",
+                "longitude": "32.42451"
+            },
+            "countryLabel": "Cyprus",
+            "countryValue": "Cyprus",
+            "countryCode": "CY"
+        },
+        {
+            "label": "Paris",
+            "value": "Paris",
+            "geoCode": {
+                "latitude": "48.8534",
+                "longitude": "2.3486"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Phuket",
+            "value": "Phuket",
+            "geoCode": {
+                "latitude": "7.89059",
+                "longitude": "98.3981"
+            },
+            "countryLabel": "Thailand",
+            "countryValue": "Thailand",
+            "countryCode": "TH"
+        },
+        {
+            "label": "Praslin Island",
+            "value": "Praslin Island",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Seychelles",
+            "countryValue": "Seychelles",
+            "countryCode": "SC"
+        },
+        {
+            "label": "Quarteira",
+            "value": "Quarteira",
+            "geoCode": {
+                "latitude": "37.06946",
+                "longitude": "-8.10064"
+            },
+            "countryLabel": "Portugal",
+            "countryValue": "Portugal",
+            "countryCode": "PT"
+        },
+        {
+            "label": "Rabat",
+            "value": "Rabat",
+            "geoCode": {
+                "latitude": "34.01325",
+                "longitude": "-6.83255"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Ras Al Khaimah",
+            "value": "Ras Al Khaimah",
+            "geoCode": {
+                "latitude": "25.46116",
+                "longitude": "56.04058"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Riyadh",
+            "value": "Riyadh",
+            "geoCode": {
+                "latitude": "24.68773",
+                "longitude": "46.72185"
+            },
+            "countryLabel": "Saudi Arabia",
+            "countryValue": "Saudi Arabia",
+            "countryCode": "SA"
+        },
+        {
+            "label": "Rome",
+            "value": "Rome",
+            "geoCode": {
+                "latitude": "41.89193",
+                "longitude": "12.51133"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "R√≥dos",
+            "value": "R√≥dos",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Saint Petersburg",
+            "value": "Saint Petersburg",
+            "geoCode": {
+                "latitude": "59.93863",
+                "longitude": "30.31413"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "Saint-laurent-du-var",
+            "value": "Saint-laurent-du-var",
+            "geoCode": {
+                "latitude": "43.67323",
+                "longitude": "7.19"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Salzburg",
+            "value": "Salzburg",
+            "geoCode": {
+                "latitude": "47.79941",
+                "longitude": "13.04399"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Samedan",
+            "value": "Samedan",
+            "geoCode": {
+                "latitude": "46.53399",
+                "longitude": "9.87276"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "San Diego",
+            "value": "San Diego",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "San Francisco",
+            "value": "San Francisco",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "San Jos√© Del Cabo",
+            "value": "San Jos√© Del Cabo",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Santorini",
+            "value": "Santorini",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Greece",
+            "countryValue": "Greece",
+            "countryCode": "GR"
+        },
+        {
+            "label": "Sarajevo",
+            "value": "Sarajevo",
+            "geoCode": {
+                "latitude": "43.84864",
+                "longitude": "18.35644"
+            },
+            "countryLabel": "Bosnia And Herzegovina",
+            "countryValue": "Bosnia And Herzegovina",
+            "countryCode": "BA"
+        },
+        {
+            "label": "Sciacca",
+            "value": "Sciacca",
+            "geoCode": {
+                "latitude": "37.50693",
+                "longitude": "13.08399"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Seoul",
+            "value": "Seoul",
+            "geoCode": {
+                "latitude": "37.566",
+                "longitude": "126.9784"
+            },
+            "countryLabel": "South Korea",
+            "countryValue": "South Korea",
+            "countryCode": "KR"
+        },
+        {
+            "label": "Sharjah",
+            "value": "Sharjah",
+            "geoCode": {
+                "latitude": "25.33737",
+                "longitude": "55.41206"
+            },
+            "countryLabel": "United Arab Emirates",
+            "countryValue": "United Arab Emirates",
+            "countryCode": "AE"
+        },
+        {
+            "label": "Sharm El Sheikh",
+            "value": "Sharm El Sheikh",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Egypt",
+            "countryValue": "Egypt",
+            "countryCode": "EG"
+        },
+        {
+            "label": "Siem Reap",
+            "value": "Siem Reap",
+            "geoCode": {
+                "latitude": "13.36179",
+                "longitude": "103.86056"
+            },
+            "countryLabel": "Cambodia",
+            "countryValue": "Cambodia",
+            "countryCode": "KH"
+        },
+        {
+            "label": "Sochi",
+            "value": "Sochi",
+            "geoCode": {
+                "latitude": "43.59917",
+                "longitude": "39.72569"
+            },
+            "countryLabel": "Russia",
+            "countryValue": "Russia",
+            "countryCode": "RU"
+        },
+        {
+            "label": "South Male Atoll",
+            "value": "South Male Atoll",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Maldives",
+            "countryValue": "Maldives",
+            "countryCode": "MV"
+        },
+        {
+            "label": "Stockholm",
+            "value": "Stockholm",
+            "geoCode": {
+                "latitude": "59.33258",
+                "longitude": "18.0649"
+            },
+            "countryLabel": "Sweden",
+            "countryValue": "Sweden",
+            "countryCode": "SE"
+        },
+        {
+            "label": "Sydney",
+            "value": "Sydney",
+            "geoCode": {
+                "latitude": "-33.86785",
+                "longitude": "151.20732"
+            },
+            "countryLabel": "Australia",
+            "countryValue": "Australia",
+            "countryCode": "AU"
+        },
+        {
+            "label": "Tampa",
+            "value": "Tampa",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Tangier",
+            "value": "Tangier",
+            "geoCode": {
+                "latitude": "35.76727",
+                "longitude": "-5.79975"
+            },
+            "countryLabel": "Morocco",
+            "countryValue": "Morocco",
+            "countryCode": "MA"
+        },
+        {
+            "label": "Tbilisi",
+            "value": "Tbilisi",
+            "geoCode": {
+                "latitude": "41.69411",
+                "longitude": "44.83368"
+            },
+            "countryLabel": "Georgia",
+            "countryValue": "Georgia",
+            "countryCode": "GE"
+        },
+        {
+            "label": "Tepoztl√°n",
+            "value": "Tepoztl√°n",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Mexico",
+            "countryValue": "Mexico",
+            "countryCode": "MX"
+        },
+        {
+            "label": "Toronto",
+            "value": "Toronto",
+            "geoCode": {
+                "latitude": "43.70011",
+                "longitude": "-79.4163"
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Trabzon",
+            "value": "Trabzon",
+            "geoCode": {
+                "latitude": "41.005",
+                "longitude": "39.72694"
+            },
+            "countryLabel": "Turkey",
+            "countryValue": "Turkey",
+            "countryCode": "TR"
+        },
+        {
+            "label": "Vancouver",
+            "value": "Vancouver",
+            "geoCode": {
+                "latitude": "49.24966",
+                "longitude": "-123.11934"
+            },
+            "countryLabel": "Canada",
+            "countryValue": "Canada",
+            "countryCode": "CA"
+        },
+        {
+            "label": "Venice",
+            "value": "Venice",
+            "geoCode": {
+                "latitude": "45.43713",
+                "longitude": "12.33265"
+            },
+            "countryLabel": "Italy",
+            "countryValue": "Italy",
+            "countryCode": "IT"
+        },
+        {
+            "label": "Versailles",
+            "value": "Versailles",
+            "geoCode": {
+                "latitude": "48.80359",
+                "longitude": "2.13424"
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Vienna",
+            "value": "Vienna",
+            "geoCode": {
+                "latitude": "48.20849",
+                "longitude": "16.37208"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Villeneuve",
+            "value": "Villeneuve",
+            "geoCode": {
+                "latitude": "46.39869",
+                "longitude": "6.92654"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Viry-ch√¢tillon",
+            "value": "Viry-ch√¢tillon",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "France",
+            "countryValue": "France",
+            "countryCode": "FR"
+        },
+        {
+            "label": "Washington",
+            "value": "Washington",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "United States Of America",
+            "countryValue": "United States Of America",
+            "countryCode": "US"
+        },
+        {
+            "label": "Yerevan",
+            "value": "Yerevan",
+            "geoCode": {
+                "latitude": "40.18111",
+                "longitude": "44.51361"
+            },
+            "countryLabel": "Armenia",
+            "countryValue": "Armenia",
+            "countryCode": "AM"
+        },
+        {
+            "label": "Zanzibar City",
+            "value": "Zanzibar City",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Tanzania",
+            "countryValue": "Tanzania",
+            "countryCode": "TZ"
+        },
+        {
+            "label": "Zell Am See",
+            "value": "Zell Am See",
+            "geoCode": {
+                "latitude": "47.32556",
+                "longitude": "12.79444"
+            },
+            "countryLabel": "Austria",
+            "countryValue": "Austria",
+            "countryCode": "AT"
+        },
+        {
+            "label": "Zermatt",
+            "value": "Zermatt",
+            "geoCode": {
+                "latitude": "46.01998",
+                "longitude": "7.74863"
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        },
+        {
+            "label": "Zurich",
+            "value": "Zurich",
+            "geoCode": {
+                "latitude": null,
+                "longitude": null
+            },
+            "countryLabel": "Switzerland",
+            "countryValue": "Switzerland",
+            "countryCode": "CH"
+        }]
+    ]
+}

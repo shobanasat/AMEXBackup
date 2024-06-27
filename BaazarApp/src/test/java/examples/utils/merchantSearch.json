@@ -1,0 +1,1059 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "items",
+        "filters"
+    ],
+    "properties": {
+        "items": {
+            "type": "array",
+            "default": [],
+            "title": "The items Schema",
+            "items": {
+                "type": "object",
+                "default": {},
+                "title": "A Schema",
+                "required": [
+                    "item",
+                    "liked",
+                    "wishlisted"
+                ],
+                "properties": {
+                    "item": {
+                        "type": "object",
+                        "default": {},
+                        "title": "The item Schema",
+                        "required": [
+                            "id",
+                            "name",
+                            "description",
+                            "category",
+                            "active",
+                            "properties",
+                            "offers",
+                            "tags",
+                            "cities",
+                            "geoCodes",
+                            "isOnline",
+                            "locations",
+                            "merchantType",
+                            "isHyperLocal"
+                        ],
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The id Schema",
+                                "examples": [
+                                    "5f587b37-39ae-34ff-a6a3-028c3c9065ce"
+                                ]
+                            },
+                            "name": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The name Schema",
+                                "examples": [
+                                    "Marbles - Radisson Blu Hotel Dubai Deira Creek"
+                                ]
+                            },
+                            "description": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The description Schema",
+                                "examples": [
+                                    "Marbles serves finger food"
+                                ]
+                            },
+                            "category": {
+                                "type": "string",
+                                "default": "",
+                                "title": "The category Schema",
+                                "examples": [
+                                    "dining"
+                                ]
+                            },
+                            "active": {
+                                "type": "boolean",
+                                "default": false,
+                                "title": "The active Schema",
+                                "examples": [
+                                    true
+                                ]
+                            },
+                            "properties": {
+                                "type": "object",
+                                "default": {},
+                                "title": "The properties Schema",
+                                "required": [
+                                    "curatedImage",
+                                    "dominantColorCode",
+                                    "externalId",
+                                    "image",
+                                    "url",
+                                    "tasteMatchScore"
+                                ],
+                                "properties": {
+                                    "curatedImage": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The curatedImage Schema",
+                                        "examples": [
+                                            "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png"
+                                        ]
+                                    },
+                                    "dominantColorCode": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The dominantColorCode Schema",
+                                        "examples": [
+                                            "#f6f7f9"
+                                        ]
+                                    },
+                                    "externalId": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The externalId Schema",
+                                        "examples": [
+                                            "LL92"
+                                        ]
+                                    },
+                                    "image": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The image Schema",
+                                        "examples": [
+                                            "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png"
+                                        ]
+                                    },
+                                    "url": {
+                                        "type": "string",
+                                        "default": "",
+                                        "title": "The url Schema",
+                                        "examples": [
+                                            "https://www.radissonhotels.com/"
+                                        ]
+                                    },
+                                    "tasteMatchScore": {
+                                        "type": "integer",
+                                        "default": 0,
+                                        "title": "The tasteMatchScore Schema",
+                                        "examples": [
+                                            70
+                                        ]
+                                    }
+                                },
+                                "examples": [{
+                                    "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png",
+                                    "dominantColorCode": "#f6f7f9",
+                                    "externalId": "LL92",
+                                    "image": "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png",
+                                    "url": "https://www.radissonhotels.com/",
+                                    "tasteMatchScore": 70
+                                }]
+                            },
+                            "offers": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The offers Schema",
+                                "items": {
+                                    "type": "object",
+                                    "default": {},
+                                    "title": "A Schema",
+                                    "required": [
+                                        "id",
+                                        "name",
+                                        "description",
+                                        "validFrom",
+                                        "validTo",
+                                        "partner",
+                                        "isOnline",
+                                        "offerActive",
+                                        "locations",
+                                        "properties"
+                                    ],
+                                    "properties": {
+                                        "id": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The id Schema",
+                                            "examples": [
+                                                "25494"
+                                            ]
+                                        },
+                                        "name": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The name Schema",
+                                            "examples": [
+                                                "Get 25% off at Marbles"
+                                            ]
+                                        },
+                                        "description": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The description Schema",
+                                            "examples": [
+                                                "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                            ]
+                                        },
+                                        "validFrom": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The validFrom Schema",
+                                            "examples": [
+                                                "2021-01-11T00:00:00.389Z"
+                                            ]
+                                        },
+                                        "validTo": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The validTo Schema",
+                                            "examples": [
+                                                "2023-10-31T23:59:59.389Z"
+                                            ]
+                                        },
+                                        "partner": {
+                                            "type": "boolean",
+                                            "default": false,
+                                            "title": "The partner Schema",
+                                            "examples": [
+                                                true
+                                            ]
+                                        },
+                                        "isOnline": {
+                                            "type": "boolean",
+                                            "default": false,
+                                            "title": "The isOnline Schema",
+                                            "examples": [
+                                                false
+                                            ]
+                                        },
+                                        "offerActive": {
+                                            "type": "boolean",
+                                            "default": false,
+                                            "title": "The offerActive Schema",
+                                            "examples": [
+                                                true
+                                            ]
+                                        },
+                                        "locations": {
+                                            "type": "array",
+                                            "default": [],
+                                            "title": "The locations Schema",
+                                            "items": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "A Schema",
+                                                "examples": [
+                                                    "57160"
+                                                ]
+                                            },
+                                            "examples": [
+                                                [
+                                                    "57160"]
+                                            ]
+                                        },
+                                        "properties": {
+                                            "type": "object",
+                                            "default": {},
+                                            "title": "The properties Schema",
+                                            "required": [
+                                                "cashbackValue",
+                                                "currency",
+                                                "howToRedeem",
+                                                "offerSource",
+                                                "offerStatus",
+                                                "offerType",
+                                                "termsAndConditions"
+                                            ],
+                                            "properties": {
+                                                "cashbackValue": {
+                                                    "type": "number",
+                                                    "default": 0.0,
+                                                    "title": "The cashbackValue Schema",
+                                                    "examples": [
+                                                        0.0
+                                                    ]
+                                                },
+                                                "currency": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The currency Schema",
+                                                    "examples": [
+                                                        "AED"
+                                                    ]
+                                                },
+                                                "howToRedeem": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The howToRedeem Schema",
+                                                    "examples": [
+                                                        "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card"
+                                                    ]
+                                                },
+                                                "offerSource": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The offerSource Schema",
+                                                    "examples": [
+                                                        "loyolink"
+                                                    ]
+                                                },
+                                                "offerStatus": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The offerStatus Schema",
+                                                    "examples": [
+                                                        "active"
+                                                    ]
+                                                },
+                                                "offerType": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The offerType Schema",
+                                                    "examples": [
+                                                        "card linked"
+                                                    ]
+                                                },
+                                                "termsAndConditions": {
+                                                    "type": "array",
+                                                    "default": [],
+                                                    "title": "The termsAndConditions Schema",
+                                                    "items": {
+                                                        "type": "string",
+                                                        "default": "",
+                                                        "title": "A Schema",
+                                                        "examples": [
+                                                            "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                                        ]
+                                                    },
+                                                    "examples": [
+                                                        [
+                                                            "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."]
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "cashbackValue": 0.0,
+                                                "currency": "AED",
+                                                "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                                "offerSource": "loyolink",
+                                                "offerStatus": "active",
+                                                "offerType": "card linked",
+                                                "termsAndConditions": [
+                                                    "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                                ]
+                                            }]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "id": "25494",
+                                        "name": "Get 25% off at Marbles",
+                                        "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                                        "validFrom": "2021-01-11T00:00:00.389Z",
+                                        "validTo": "2023-10-31T23:59:59.389Z",
+                                        "partner": true,
+                                        "isOnline": false,
+                                        "offerActive": true,
+                                        "locations": [
+                                            "57160"
+                                        ],
+                                        "properties": {
+                                            "cashbackValue": 0.0,
+                                            "currency": "AED",
+                                            "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                            "offerSource": "loyolink",
+                                            "offerStatus": "active",
+                                            "offerType": "card linked",
+                                            "termsAndConditions": [
+                                                "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                            ]
+                                        }
+                                    }]
+                                },
+                                "examples": [
+                                    [{
+                                        "id": "25494",
+                                        "name": "Get 25% off at Marbles",
+                                        "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                                        "validFrom": "2021-01-11T00:00:00.389Z",
+                                        "validTo": "2023-10-31T23:59:59.389Z",
+                                        "partner": true,
+                                        "isOnline": false,
+                                        "offerActive": true,
+                                        "locations": [
+                                            "57160"
+                                        ],
+                                        "properties": {
+                                            "cashbackValue": 0.0,
+                                            "currency": "AED",
+                                            "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                            "offerSource": "loyolink",
+                                            "offerStatus": "active",
+                                            "offerType": "card linked",
+                                            "termsAndConditions": [
+                                                "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                            ]
+                                        }
+                                    }]
+                                ]
+                            },
+                            "tags": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The tags Schema",
+                                "items": {
+                                    "type": "string",
+                                    "title": "A Schema",
+                                    "examples": [
+                                        "fine-dining",
+                                        "booking-and-reservations",
+                                        "valet-parking",
+                                        "live-music",
+                                        "general",
+                                        "wifi",
+                                        "accepts-cards",
+                                        "dine-in",
+                                        "large-group-friendly",
+                                        "serves-alcohol-full-bar",
+                                        "bars-and-pubs",
+                                        "luxury"
+                                    ]
+                                },
+                                "examples": [
+                                    ["fine-dining",
+                                        "booking-and-reservations",
+                                        "valet-parking",
+                                        "live-music",
+                                        "general",
+                                        "wifi",
+                                        "accepts-cards",
+                                        "dine-in",
+                                        "large-group-friendly",
+                                        "serves-alcohol-full-bar",
+                                        "bars-and-pubs",
+                                        "luxury"
+                                    ]
+                                ]
+                            },
+                            "cities": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The cities Schema",
+                                "items": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "A Schema",
+                                    "examples": [
+                                        "Dubai"
+                                    ]
+                                },
+                                "examples": [
+                                    [
+                                        "Dubai"]
+                                ]
+                            },
+                            "geoCodes": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The geoCodes Schema",
+                                "items": {
+                                    "type": "object",
+                                    "default": {},
+                                    "title": "A Schema",
+                                    "required": [
+                                        "latitude",
+                                        "longitude"
+                                    ],
+                                    "properties": {
+                                        "latitude": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The latitude Schema",
+                                            "examples": [
+                                                "25.264906"
+                                            ]
+                                        },
+                                        "longitude": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The longitude Schema",
+                                            "examples": [
+                                                "55.310924"
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "latitude": "25.264906",
+                                        "longitude": "55.310924"
+                                    }]
+                                },
+                                "examples": [
+                                    [{
+                                        "latitude": "25.264906",
+                                        "longitude": "55.310924"
+                                    }]
+                                ]
+                            },
+                            "isOnline": {
+                                "type": "boolean",
+                                "default": false,
+                                "title": "The isOnline Schema",
+                                "examples": [
+                                    false
+                                ]
+                            },
+                            "locations": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The locations Schema",
+                                "items": {
+                                    "type": "object",
+                                    "default": {},
+                                    "title": "A Schema",
+                                    "required": [
+                                        "id",
+                                        "city",
+                                        "geoCode",
+                                        "address",
+                                        "offers"
+                                    ],
+                                    "properties": {
+                                        "id": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The id Schema",
+                                            "examples": [
+                                                "57160"
+                                            ]
+                                        },
+                                        "city": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The city Schema",
+                                            "examples": [
+                                                "Dubai"
+                                            ]
+                                        },
+                                        "geoCode": {
+                                            "type": "object",
+                                            "default": {},
+                                            "title": "The geoCode Schema",
+                                            "required": [
+                                                "latitude",
+                                                "longitude"
+                                            ],
+                                            "properties": {
+                                                "latitude": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The latitude Schema",
+                                                    "examples": [
+                                                        "25.264906"
+                                                    ]
+                                                },
+                                                "longitude": {
+                                                    "type": "string",
+                                                    "default": "",
+                                                    "title": "The longitude Schema",
+                                                    "examples": [
+                                                        "55.310924"
+                                                    ]
+                                                }
+                                            },
+                                            "examples": [{
+                                                "latitude": "25.264906",
+                                                "longitude": "55.310924"
+                                            }]
+                                        },
+                                        "address": {
+                                            "type": "string",
+                                            "default": "",
+                                            "title": "The address Schema",
+                                            "examples": [
+                                                "Baniyas Road, Deira, Dubai"
+                                            ]
+                                        },
+                                        "offers": {
+                                            "type": "array",
+                                            "default": [],
+                                            "title": "The offers Schema",
+                                            "items": {
+                                                "type": "string",
+                                                "default": "",
+                                                "title": "A Schema",
+                                                "examples": [
+                                                    "25494"
+                                                ]
+                                            },
+                                            "examples": [
+                                                [
+                                                    "25494"]
+                                            ]
+                                        }
+                                    },
+                                    "examples": [{
+                                        "id": "57160",
+                                        "city": "Dubai",
+                                        "geoCode": {
+                                            "latitude": "25.264906",
+                                            "longitude": "55.310924"
+                                        },
+                                        "address": "Baniyas Road, Deira, Dubai",
+                                        "offers": [
+                                            "25494"
+                                        ]
+                                    }]
+                                },
+                                "examples": [
+                                    [{
+                                        "id": "57160",
+                                        "city": "Dubai",
+                                        "geoCode": {
+                                            "latitude": "25.264906",
+                                            "longitude": "55.310924"
+                                        },
+                                        "address": "Baniyas Road, Deira, Dubai",
+                                        "offers": [
+                                            "25494"
+                                        ]
+                                    }]
+                                ]
+                            },
+                            "merchantType": {
+                                "type": "array",
+                                "default": [],
+                                "title": "The merchantType Schema",
+                                "items": {
+                                    "type": "string",
+                                    "default": "",
+                                    "title": "A Schema",
+                                    "examples": [
+                                        "offline"
+                                    ]
+                                },
+                                "examples": [
+                                    [
+                                        "offline"]
+                                ]
+                            },
+                            "isHyperLocal": {
+                                "type": "boolean",
+                                "default": false,
+                                "title": "The isHyperLocal Schema",
+                                "examples": [
+                                    false
+                                ]
+                            }
+                        },
+                        "examples": [{
+                            "id": "5f587b37-39ae-34ff-a6a3-028c3c9065ce",
+                            "name": "Marbles - Radisson Blu Hotel Dubai Deira Creek",
+                            "description": "Marbles serves finger food",
+                            "category": "dining",
+                            "active": true,
+                            "properties": {
+                                "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png",
+                                "dominantColorCode": "#f6f7f9",
+                                "externalId": "LL92",
+                                "image": "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png",
+                                "url": "https://www.radissonhotels.com/",
+                                "tasteMatchScore": 70
+                            },
+                            "offers": [{
+                                "id": "25494",
+                                "name": "Get 25% off at Marbles",
+                                "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                                "validFrom": "2021-01-11T00:00:00.389Z",
+                                "validTo": "2023-10-31T23:59:59.389Z",
+                                "partner": true,
+                                "isOnline": false,
+                                "offerActive": true,
+                                "locations": [
+                                    "57160"
+                                ],
+                                "properties": {
+                                    "cashbackValue": 0.0,
+                                    "currency": "AED",
+                                    "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                    "offerSource": "loyolink",
+                                    "offerStatus": "active",
+                                    "offerType": "card linked",
+                                    "termsAndConditions": [
+                                        "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                    ]
+                                }
+                            }],
+                            "tags": [
+                                "fine-dining",
+                                "booking-and-reservations",
+                                "valet-parking",
+                                "live-music",
+                                "general",
+                                "wifi",
+                                "accepts-cards",
+                                "dine-in",
+                                "large-group-friendly",
+                                "serves-alcohol-full-bar",
+                                "bars-and-pubs",
+                                "luxury"
+                            ],
+                            "cities": [
+                                "Dubai"
+                            ],
+                            "geoCodes": [{
+                                "latitude": "25.264906",
+                                "longitude": "55.310924"
+                            }],
+                            "isOnline": false,
+                            "locations": [{
+                                "id": "57160",
+                                "city": "Dubai",
+                                "geoCode": {
+                                    "latitude": "25.264906",
+                                    "longitude": "55.310924"
+                                },
+                                "address": "Baniyas Road, Deira, Dubai",
+                                "offers": [
+                                    "25494"
+                                ]
+                            }],
+                            "merchantType": [
+                                "offline"
+                            ],
+                            "isHyperLocal": false
+                        }]
+                    },
+                    "liked": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "The liked Schema",
+                        "examples": [
+                            false
+                        ]
+                    },
+                    "wishlisted": {
+                        "type": "boolean",
+                        "default": false,
+                        "title": "The wishlisted Schema",
+                        "examples": [
+                            false
+                        ]
+                    }
+                },
+                "examples": [{
+                    "item": {
+                        "id": "5f587b37-39ae-34ff-a6a3-028c3c9065ce",
+                        "name": "Marbles - Radisson Blu Hotel Dubai Deira Creek",
+                        "description": "Marbles serves finger food",
+                        "category": "dining",
+                        "active": true,
+                        "properties": {
+                            "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png",
+                            "dominantColorCode": "#f6f7f9",
+                            "externalId": "LL92",
+                            "image": "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png",
+                            "url": "https://www.radissonhotels.com/",
+                            "tasteMatchScore": 70
+                        },
+                        "offers": [{
+                            "id": "25494",
+                            "name": "Get 25% off at Marbles",
+                            "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                            "validFrom": "2021-01-11T00:00:00.389Z",
+                            "validTo": "2023-10-31T23:59:59.389Z",
+                            "partner": true,
+                            "isOnline": false,
+                            "offerActive": true,
+                            "locations": [
+                                "57160"
+                            ],
+                            "properties": {
+                                "cashbackValue": 0.0,
+                                "currency": "AED",
+                                "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                "offerSource": "loyolink",
+                                "offerStatus": "active",
+                                "offerType": "card linked",
+                                "termsAndConditions": [
+                                    "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                ]
+                            }
+                        }],
+                        "tags": [
+                            "fine-dining",
+                            "booking-and-reservations",
+                            "valet-parking",
+                            "live-music",
+                            "general",
+                            "wifi",
+                            "accepts-cards",
+                            "dine-in",
+                            "large-group-friendly",
+                            "serves-alcohol-full-bar",
+                            "bars-and-pubs",
+                            "luxury"
+                        ],
+                        "cities": [
+                            "Dubai"
+                        ],
+                        "geoCodes": [{
+                            "latitude": "25.264906",
+                            "longitude": "55.310924"
+                        }],
+                        "isOnline": false,
+                        "locations": [{
+                            "id": "57160",
+                            "city": "Dubai",
+                            "geoCode": {
+                                "latitude": "25.264906",
+                                "longitude": "55.310924"
+                            },
+                            "address": "Baniyas Road, Deira, Dubai",
+                            "offers": [
+                                "25494"
+                            ]
+                        }],
+                        "merchantType": [
+                            "offline"
+                        ],
+                        "isHyperLocal": false
+                    },
+                    "liked": false,
+                    "wishlisted": false
+                }]
+            },
+            "examples": [
+                [{
+                    "item": {
+                        "id": "5f587b37-39ae-34ff-a6a3-028c3c9065ce",
+                        "name": "Marbles - Radisson Blu Hotel Dubai Deira Creek",
+                        "description": "Marbles serves finger food",
+                        "category": "dining",
+                        "active": true,
+                        "properties": {
+                            "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png",
+                            "dominantColorCode": "#f6f7f9",
+                            "externalId": "LL92",
+                            "image": "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png",
+                            "url": "https://www.radissonhotels.com/",
+                            "tasteMatchScore": 70
+                        },
+                        "offers": [{
+                            "id": "25494",
+                            "name": "Get 25% off at Marbles",
+                            "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                            "validFrom": "2021-01-11T00:00:00.389Z",
+                            "validTo": "2023-10-31T23:59:59.389Z",
+                            "partner": true,
+                            "isOnline": false,
+                            "offerActive": true,
+                            "locations": [
+                                "57160"
+                            ],
+                            "properties": {
+                                "cashbackValue": 0.0,
+                                "currency": "AED",
+                                "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                                "offerSource": "loyolink",
+                                "offerStatus": "active",
+                                "offerType": "card linked",
+                                "termsAndConditions": [
+                                    "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                                ]
+                            }
+                        }],
+                        "tags": [
+                            "fine-dining",
+                            "booking-and-reservations",
+                            "valet-parking",
+                            "live-music",
+                            "general",
+                            "wifi",
+                            "accepts-cards",
+                            "dine-in",
+                            "large-group-friendly",
+                            "serves-alcohol-full-bar",
+                            "bars-and-pubs",
+                            "luxury"
+                        ],
+                        "cities": [
+                            "Dubai"
+                        ],
+                        "geoCodes": [{
+                            "latitude": "25.264906",
+                            "longitude": "55.310924"
+                        }],
+                        "isOnline": false,
+                        "locations": [{
+                            "id": "57160",
+                            "city": "Dubai",
+                            "geoCode": {
+                                "latitude": "25.264906",
+                                "longitude": "55.310924"
+                            },
+                            "address": "Baniyas Road, Deira, Dubai",
+                            "offers": [
+                                "25494"
+                            ]
+                        }],
+                        "merchantType": [
+                            "offline"
+                        ],
+                        "isHyperLocal": false
+                    },
+                    "liked": false,
+                    "wishlisted": false
+                }]
+            ]
+        },
+        "filters": {
+            "type": "object",
+            "default": {},
+            "title": "The filters Schema",
+            "required": [
+                "Offer Type",
+                "Merchant Type"
+            ],
+            "properties": {
+                "Offer Type": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The Offer Type Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "Card Offers"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "Card Offers"]
+                    ]
+                },
+                "Merchant Type": {
+                    "type": "array",
+                    "default": [],
+                    "title": "The Merchant Type Schema",
+                    "items": {
+                        "type": "string",
+                        "default": "",
+                        "title": "A Schema",
+                        "examples": [
+                            "In Store"
+                        ]
+                    },
+                    "examples": [
+                        [
+                            "In Store"]
+                    ]
+                }
+            },
+            "examples": [{
+                "Offer Type": [
+                    "Card Offers"
+                ],
+                "Merchant Type": [
+                    "In Store"
+                ]
+            }]
+        }
+    },
+    "examples": [{
+        "items": [{
+            "item": {
+                "id": "5f587b37-39ae-34ff-a6a3-028c3c9065ce",
+                "name": "Marbles - Radisson Blu Hotel Dubai Deira Creek",
+                "description": "Marbles serves finger food",
+                "category": "dining",
+                "active": true,
+                "properties": {
+                    "curatedImage": "https://dpimages.crayondata.com/high-res-image/resized/offer/LL92_Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_1.png",
+                    "dominantColorCode": "#f6f7f9",
+                    "externalId": "LL92",
+                    "image": "https://dpimages.crayondata.com/high-res-image/adib/Marbles_Radisson_Blu_Hotel_Dubai_Deira_Creek_Logo.png",
+                    "url": "https://www.radissonhotels.com/",
+                    "tasteMatchScore": 70
+                },
+                "offers": [{
+                    "id": "25494",
+                    "name": "Get 25% off at Marbles",
+                    "description": "Get 25% off at Marbles\n1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise.",
+                    "validFrom": "2021-01-11T00:00:00.389Z",
+                    "validTo": "2023-10-31T23:59:59.389Z",
+                    "partner": true,
+                    "isOnline": false,
+                    "offerActive": true,
+                    "locations": [
+                        "57160"
+                    ],
+                    "properties": {
+                        "cashbackValue": 0.0,
+                        "currency": "AED",
+                        "howToRedeem": "1. Visit the restaurant\n2. Show the offer details to the management\n3. Make sure the offer is applied on your bill\n4. Make payment using bank card",
+                        "offerSource": "loyolink",
+                        "offerStatus": "active",
+                        "offerType": "card linked",
+                        "termsAndConditions": [
+                            "1.The offer is valid till 31-10-2022\n2.Offer is not valid in conjuction with any offer, discount and special promotion. Offer is valid for dine-in only, not take-away. Offer is not valid on retail.\n3.Offer is applicable for ADIB card users only\n4.Offer is subject to merchant approval\n5.Cardholder must mention the offer before making the payment to redeem the offer.\n6.Offer cannot be exchanged for cash or any other merchandise."
+                        ]
+                    }
+                }],
+                "tags": [
+                    "fine-dining",
+                    "booking-and-reservations",
+                    "valet-parking",
+                    "live-music",
+                    "general",
+                    "wifi",
+                    "accepts-cards",
+                    "dine-in",
+                    "large-group-friendly",
+                    "serves-alcohol-full-bar",
+                    "bars-and-pubs",
+                    "luxury"
+                ],
+                "cities": [
+                    "Dubai"
+                ],
+                "geoCodes": [{
+                    "latitude": "25.264906",
+                    "longitude": "55.310924"
+                }],
+                "isOnline": false,
+                "locations": [{
+                    "id": "57160",
+                    "city": "Dubai",
+                    "geoCode": {
+                        "latitude": "25.264906",
+                        "longitude": "55.310924"
+                    },
+                    "address": "Baniyas Road, Deira, Dubai",
+                    "offers": [
+                        "25494"
+                    ]
+                }],
+                "merchantType": [
+                    "offline"
+                ],
+                "isHyperLocal": false
+            },
+            "liked": false,
+            "wishlisted": false
+        }],
+        "filters": {
+            "Offer Type": [
+                "Card Offers"
+            ],
+            "Merchant Type": [
+                "In Store"
+            ]
+        }
+    }]
+}

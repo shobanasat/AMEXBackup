@@ -1,0 +1,350 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome6Element"
+    },
+    "definitions": {
+        "Welcome6Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "uuid"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "category": {
+                    "type": "string"
+                },
+                "active": {
+                    "type": "boolean"
+                },
+                "properties": {
+                    "$ref": "#/definitions/Welcome6Properties"
+                },
+                "offers": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Offer"
+                    }
+                },
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "cities": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/City"
+                    }
+                },
+                "geoCodes": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/GeoCode"
+                    }
+                },
+                "isOnline": {
+                    "type": "boolean"
+                },
+                "locations": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Location"
+                    }
+                },
+                "merchantType": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "isHyperLocal": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "active",
+                "category",
+                "cities",
+                "description",
+                "geoCodes",
+                "id",
+                "isHyperLocal",
+                "isOnline",
+                "locations",
+                "merchantType",
+                "name",
+                "offers",
+                "properties",
+                "tags"
+            ],
+            "title": "Welcome6Element"
+        },
+        "GeoCode": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "latitude": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                },
+                "longitude": {
+                    "anyOf": [
+                        {
+                            "type": "null"
+                        },
+                        {
+                            "type": "string"
+                        }
+                    ]
+                }
+            },
+            "required": [
+                "latitude",
+                "longitude"
+            ],
+            "title": "GeoCode"
+        },
+        "Location": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "city": {
+                    "$ref": "#/definitions/City"
+                },
+                "geoCode": {
+                    "$ref": "#/definitions/GeoCode"
+                },
+                "address": {
+                    "type": "string"
+                },
+                "offers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "integer"
+                    }
+                }
+            },
+            "required": [
+                "city",
+                "geoCode",
+                "id",
+                "offers"
+            ],
+            "title": "Location"
+        },
+        "Offer": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "validFrom": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "validTo": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "partner": {
+                    "type": "boolean"
+                },
+                "isOnline": {
+                    "type": "boolean"
+                },
+                "offerActive": {
+                    "type": "boolean"
+                },
+                "locations": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "format": "integer"
+                    }
+                },
+                "properties": {
+                    "$ref": "#/definitions/OfferProperties"
+                }
+            },
+            "required": [
+                "description",
+                "id",
+                "isOnline",
+                "locations",
+                "name",
+                "offerActive",
+                "partner",
+                "properties",
+                "validFrom",
+                "validTo"
+            ],
+            "title": "Offer"
+        },
+        "OfferProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "cashbackValue": {
+                    "type": "number"
+                },
+                "curatedOfferImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".png"
+                    ]
+                },
+                "currency": {
+                    "type": "string"
+                },
+                "howToRedeem": {
+                    "type": "string"
+                },
+                "offerSource": {
+                    "type": "string"
+                },
+                "offerStatus": {
+                    "type": "string"
+                },
+                "offerType": {
+                    "type": "string"
+                },
+                "termsAndConditions": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "cashbackValue",
+                "curatedOfferImage",
+                "currency",
+                "howToRedeem",
+                "offerSource",
+                "offerStatus",
+                "offerType",
+                "termsAndConditions"
+            ],
+            "title": "OfferProperties"
+        },
+        "Welcome6Properties": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "brandLogo": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "curatedImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".png"
+                    ]
+                },
+                "dominantColorCode": {
+                    "type": "string"
+                },
+                "externalId": {
+                    "type": "string"
+                },
+                "image": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".png"
+                    ]
+                },
+                "merchantBannerImage": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg"
+                    ]
+                },
+                "url": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ]
+                },
+                "tasteMatchScore": {
+                    "type": "integer"
+                },
+                "wishlisted": {
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "brandLogo",
+                "curatedImage",
+                "dominantColorCode",
+                "externalId",
+                "image",
+                "merchantBannerImage",
+                "tasteMatchScore",
+                "url",
+                "wishlisted"
+            ],
+            "title": "Welcome6Properties"
+        },
+        "City": {
+            "type": "string",
+            "enum": [
+                "Dubai",
+                "all",
+                "Sharjah"
+            ],
+            "title": "City"
+        }
+    }
+}

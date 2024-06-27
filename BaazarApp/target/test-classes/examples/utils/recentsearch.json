@@ -1,0 +1,85 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "response"
+    ],
+    "properties": {
+        "response": {
+            "type": "array",
+            "default": [],
+            "title": "The response Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "searchText",
+                    "timestamp"
+                ],
+                "properties": {
+                    "searchText": {
+                        "type": "string",
+                        "title": "The searchText Schema",
+                        "examples": [
+                            "daily",
+                            "apparel",
+                            "amazon"
+                        ]
+                    },
+                    "timestamp": {
+                        "type": "string",
+                        "title": "The timestamp Schema",
+                        "examples": [
+                            "2022-05-04T10:10:15.902+0000",
+                            "2022-05-04T10:10:15.748+0000",
+                            "2022-05-04T10:10:15.605+0000"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "searchText": "daily",
+                    "timestamp": "2022-05-04T10:10:15.902+0000"
+                },
+                {
+                    "searchText": "apparel",
+                    "timestamp": "2022-05-04T10:10:15.748+0000"
+                },
+                {
+                    "searchText": "amazon",
+                    "timestamp": "2022-05-04T10:10:15.605+0000"
+                }]
+            },
+            "examples": [
+                [{
+                    "searchText": "daily",
+                    "timestamp": "2022-05-04T10:10:15.902+0000"
+                },
+                {
+                    "searchText": "apparel",
+                    "timestamp": "2022-05-04T10:10:15.748+0000"
+                },
+                {
+                    "searchText": "amazon",
+                    "timestamp": "2022-05-04T10:10:15.605+0000"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "response": [{
+            "searchText": "daily",
+            "timestamp": "2022-05-04T10:10:15.902+0000"
+        },
+        {
+            "searchText": "apparel",
+            "timestamp": "2022-05-04T10:10:15.748+0000"
+        },
+        {
+            "searchText": "amazon",
+            "timestamp": "2022-05-04T10:10:15.605+0000"
+        }]
+    }]
+}

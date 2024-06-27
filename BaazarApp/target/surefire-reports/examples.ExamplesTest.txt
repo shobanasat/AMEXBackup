@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: examples.ExamplesTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.845 s <<< FAILURE! - in examples.ExamplesTest
+testParallel  Time elapsed: 32.839 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+did not evaluate to 'true': SchemaUtils.isValid(jsonData, jsonSchemaExpected)
+classpath:examples/users/JSONSchema.feature:82
+status code was: 404, expected: 200, response time in milliseconds: 1082, url: https://dev-consumer-api.crayondata.com/api/v3/items/similar/07fa5146-8150-42a8-a89a-227304309fe2/12?location=dubai, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/JSONSchema.feature:132
+status code was: 400, expected: 200, response time in milliseconds: 998, url: https://dev-consumer-api.crayondata.com/api/v3/merchant/search/recent, response: 
+{"status":400,"message":"Invalid user"}
+classpath:examples/users/HDFCSchema.feature:23
+status code was: 404, expected: 200, response time in milliseconds: 1002, url: https://dev-consumer-api.crayondata.com/api/v3/user/campaigns?campaignType=EVENT, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/HDFCSchema.feature:77
+status code was: 404, expected: 200, response time in milliseconds: 1000, url: https://dev-consumer-api.crayondata.com/api/v3/items/similar/07fa5146-8150-42a8-a89a-227304309fe2/12?location=dubai, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/HDFCSchema.feature:132
+status code was: 404, expected: 200, response time in milliseconds: 960, url: https://dev-consumer-api.crayondata.com/api/v3/user/redeemed/offers, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/HDFCSchema.feature:168
+status code was: 404, expected: 200, response time in milliseconds: 984, url: https://dev-consumer-api.crayondata.com/api/v3/user/interaction?itemType=MERCHANT&interactionType=WISHLIST&servedAt=2022-04-06T23%3A59%3A59.000%2B00%3A00, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/HDFCSchema.feature:186
+status code was: 404, expected: 200, response time in milliseconds: 1109, url: https://dev-consumer-api.crayondata.com/api/v3/auth/login, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/DEV.feature:21
+status code was: 404, expected: 401, response time in milliseconds: 1066, url: https://dev-consumer-api.crayondata.com/api/v3/auth/login, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/DEV.feature:35
+status code was: 404, expected: 401, response time in milliseconds: 978, url: https://dev-consumer-api.crayondata.com/api/v3/auth/login, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/DEV.feature:35
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 41.
+classpath:examples/users/DEV.feature:33
+status code was: 404, expected: 401, response time in milliseconds: 1127, url: https://dev-consumer-api.crayondata.com/api/v3/auth/login, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/DEV.feature:35
+net.minidev.json.parser.ParseException: Unexpected character (}) at position 18.
+classpath:examples/users/DEV.feature:33
+status code was: 404, expected: 200, response time in milliseconds: 1025, url: https://dev-consumer-api.crayondata.com/api/v3/auth/login, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/DEV.feature:53
+status code was: 404, expected: 200, response time in milliseconds: 1794, url: https://dev-consumer-api.crayondata.com/api/v3/merchant/search/recent, response: 
+{"status":404,"message":"Not found"}
+classpath:examples/users/ADIBSchema.feature:22
+status code was: 404, expected: 200, response time in milliseconds: 1810, url: https://dev-consumer-api.crayondata.com/api/v3/user/campaigns?campaignType=EVENT, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/ADIBSchema.feature:76
+did not evaluate to 'true': SchemaUtils.isValid(jsonData, jsonSchemaExpected)
+classpath:examples/users/ADIBSchema.feature:99
+status code was: 404, expected: 200, response time in milliseconds: 1041, url: https://dev-consumer-api.crayondata.com/api/v3/items/similar/07fa5146-8150-42a8-a89a-227304309fe2/12?location=dubai, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/ADIBSchema.feature:131
+status code was: 404, expected: 200, response time in milliseconds: 1013, url: https://dev-consumer-api.crayondata.com/api/v3/user/redeemed/offers, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/ADIBSchema.feature:167
+status code was: 404, expected: 200, response time in milliseconds: 979, url: https://dev-consumer-api.crayondata.com/api/v3/user/interaction?itemType=MERCHANT&interactionType=WISHLIST, response: 
+{"status":404,"message":"Not Found"}
+classpath:examples/users/ADIBSchema.feature:185
+did not evaluate to 'true': SchemaUtils.isValid(jsonData, jsonSchemaExpected)
+classpath:examples/users/ADIBSchema.feature:226
+did not evaluate to 'true': SchemaUtils.isValid(jsonData, jsonSchemaExpected)
+classpath:examples/users/ConsumerSchema.feature:82
+status code was: 404, expected: 200, response time in milliseconds: 978, url: https://dev-consumer-api.crayondata.com/api/v3/items/similar/07fa5146-8150-42a8-a89a-227304309fe2/12?location=dubai, response: 
+{"status":404,"message":"No message available"}
+classpath:examples/users/ConsumerSchema.feature:132 ==> expected: <0> but was: <23>
+	at examples.ExamplesTest.testParallel(ExamplesTest.java:15)
+

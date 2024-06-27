@@ -1,0 +1,3137 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "dining"
+    ],
+    "properties": {
+        "dining": {
+            "type": "array",
+            "default": [],
+            "title": "The dining Schema",
+            "items": {
+                "type": "object",
+                "title": "A Schema",
+                "required": [
+                    "value",
+                    "label"
+                ],
+                "properties": {
+                    "value": {
+                        "type": "null",
+                        "title": "The value Schema",
+                        "examples": [
+                            null
+                        ]
+                    },
+                    "label": {
+                        "type": "string",
+                        "title": "The label Schema",
+                        "examples": [
+                            "restaurant",
+                            "cafe",
+                            "food-truck",
+                            "food-court",
+                            "food-stall",
+                            "bars-and-pubs",
+                            "sports-bar",
+                            "club",
+                            "afghani-cuisine",
+                            "african-cuisine",
+                            "american-cuisine",
+                            "andhra-cuisine",
+                            "arabian-cuisine",
+                            "asian-cuisine",
+                            "assamese-cuisine",
+                            "australian-cuisine",
+                            "awadhi-cuisine",
+                            "barbeque",
+                            "belgian-cuisine",
+                            "bengali-cuisine",
+                            "brazilian-cuisine",
+                            "british-cuisine",
+                            "burmese-cuisine",
+                            "canadian-cuisine",
+                            "cantonese-cuisine",
+                            "carribean-cuisine",
+                            "chettinad-cuisine",
+                            "chilean-cuisine",
+                            "chinese-cuisine",
+                            "continental-cuisine",
+                            "cuban-cuisine",
+                            "dutch-cuisine",
+                            "egyptian-cuisine",
+                            "ethiopian-cuisine",
+                            "european-cuisine",
+                            "filipino-cuisine",
+                            "french-cuisine",
+                            "fusion-cuisine",
+                            "fusion-cuisine-indo-chinese-fusion",
+                            "german-cuisine",
+                            "goan-cuisine",
+                            "greece-cuisine",
+                            "gujarati-cuisine",
+                            "hawaian-cuisine",
+                            "hyderabad-cuisine",
+                            "indian-cuisine",
+                            "indonesian-cuisine",
+                            "international-cuisine",
+                            "iranian-cuisine",
+                            "irish-cuisine",
+                            "italian-cuisine",
+                            "jain-food",
+                            "jamaican-cuisine",
+                            "japanese-cuisine",
+                            "kashmiri-cusine",
+                            "kerala-cuisine",
+                            "konkan-cuisine",
+                            "korean-cuisine",
+                            "latin-american-cuisine",
+                            "latin-cuisine",
+                            "lebanese-cuisine",
+                            "local-cuisine",
+                            "maharastrian-cuisine",
+                            "malaysian-cuisine",
+                            "malwani-cuisine",
+                            "mandi-cuisine",
+                            "mangalorean-cuisine",
+                            "mediterranean-cuisine",
+                            "mexican-cuisine",
+                            "middle-eastern-cuisine",
+                            "moroccan-cuisine",
+                            "multi-cuisine",
+                            "nepalese-cuisine",
+                            "north-indian-cuisine",
+                            "odia-cuisine",
+                            "pakistani-cuisine",
+                            "peranakan-cuisine",
+                            "persian-cuisine",
+                            "peruvian-cuisine",
+                            "philippine-cuisine",
+                            "portuguese-cuisine",
+                            "punjabi-cuisine",
+                            "rajasthani-cuisine",
+                            "russian-cuisine",
+                            "scottish-cuisine",
+                            "singaporean-cuisine",
+                            "south-indian-cuisine",
+                            "spanish-cuisine",
+                            "sri-lankan-cuisine",
+                            "swiss-cusine",
+                            "syrian-cuisine",
+                            "taiwanese-cuisine",
+                            "texmex-cuisine",
+                            "thai-cuisine",
+                            "tibetian-cuisine",
+                            "turkish-cuisine",
+                            "vietnamese-cuisine",
+                            "western-cuisine",
+                            "general",
+                            "fast-food",
+                            "fast-casual-dining",
+                            "casual-dining",
+                            "fine-dining",
+                            "luxury-dining",
+                            "bakery",
+                            "juice-bar",
+                            "dessert-parlour",
+                            "brewery",
+                            "vegetarian-restaurant",
+                            "vegan-restaurant",
+                            "quick-bites",
+                            "chain-outlet",
+                            "buffet",
+                            "themed-restaurant",
+                            "ladies-night",
+                            "breakfast",
+                            "brunch",
+                            "lunch",
+                            "afternoon-tea",
+                            "dinner",
+                            "supper",
+                            "all-day-breakfast",
+                            "lunch-and-dinner",
+                            "all-meals",
+                            "dine-with-a-view",
+                            "cakes",
+                            "chocolates",
+                            "cream-puffs",
+                            "cupcakes",
+                            "donuts",
+                            "pastries",
+                            "ice-cream",
+                            "frozen-yogurt",
+                            "waffles",
+                            "breads-and-pastries",
+                            "air-conditioned",
+                            "drive-thru",
+                            "games",
+                            "happy-hours",
+                            "highchair-available",
+                            "karaoke",
+                            "kids-play-area",
+                            "live-cooking",
+                            "live-music",
+                            "live-sports-screening",
+                            "live-entertainment",
+                            "outdoor-seating",
+                            "parking-available",
+                            "poolside-dining",
+                            "private-dining",
+                            "rooftop-dining",
+                            "serves-alcohol-full-bar",
+                            "smoking-area",
+                            "wheelchair-access",
+                            "wifi",
+                            "delivery-services",
+                            "booking-and-reservations",
+                            "catering-services",
+                            "24/7",
+                            "self-serve",
+                            "friendly-staff",
+                            "dine-in",
+                            "mobile-app",
+                            "take-away",
+                            "classical-design",
+                            "ethnic-design",
+                            "industrial-design",
+                            "country-design",
+                            "basic-design",
+                            "other-design",
+                            "large-group-friendly",
+                            "business-meeting",
+                            "couple-friendly",
+                            "vegetarian-friendly",
+                            "pet-friendly",
+                            "accepts-apple-pay",
+                            "accepts-android-pay",
+                            "mobile-payment",
+                            "cash-on-delivery",
+                            "cards-only",
+                            "premium",
+                            "average-pricing",
+                            "affordable",
+                            "steak-house",
+                            "gastropub",
+                            "greek-cuisine",
+                            "haute-cuisine",
+                            "nouvelle-cuisine",
+                            "halal",
+                            "kosher",
+                            "specialty-food-market",
+                            "late-night-dining",
+                            "dine-with-chef",
+                            "curry",
+                            "dim-sum",
+                            "noodles",
+                            "pasta",
+                            "pizza",
+                            "sushi",
+                            "tapas",
+                            "soups",
+                            "hamburgers",
+                            "salads",
+                            "sandwiches",
+                            "wraps-and-rolls",
+                            "meat",
+                            "poultry",
+                            "seafood",
+                            "vegan",
+                            "juices",
+                            "smoothies",
+                            "beers",
+                            "cocktails",
+                            "coffee",
+                            "tea",
+                            "whiskeys",
+                            "wines",
+                            "hookah",
+                            "gluten-free",
+                            "signature-dish",
+                            "shepherd-pie",
+                            "eton-mess",
+                            "rum",
+                            "mocktails",
+                            "mousse",
+                            "celebrity-chef",
+                            "dance-floor",
+                            "banquet-hall",
+                            "infinity-pool",
+                            "validated-parking",
+                            "tv",
+                            "valet-parking",
+                            "online-order",
+                            "modern-design",
+                            "kid-friendly",
+                            "accepts-cards",
+                            "luxury"
+                        ]
+                    }
+                },
+                "examples": [{
+                    "value": null,
+                    "label": "restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "cafe"
+                },
+                {
+                    "value": null,
+                    "label": "food-truck"
+                },
+                {
+                    "value": null,
+                    "label": "food-court"
+                },
+                {
+                    "value": null,
+                    "label": "food-stall"
+                },
+                {
+                    "value": null,
+                    "label": "bars-and-pubs"
+                },
+                {
+                    "value": null,
+                    "label": "sports-bar"
+                },
+                {
+                    "value": null,
+                    "label": "club"
+                },
+                {
+                    "value": null,
+                    "label": "afghani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "african-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "american-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "andhra-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "arabian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "asian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "assamese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "australian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "awadhi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "barbeque"
+                },
+                {
+                    "value": null,
+                    "label": "belgian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "bengali-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "brazilian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "british-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "burmese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "canadian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "cantonese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "carribean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chettinad-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chilean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chinese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "continental-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "cuban-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "dutch-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "egyptian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "ethiopian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "european-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "filipino-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "french-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "fusion-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "fusion-cuisine-indo-chinese-fusion"
+                },
+                {
+                    "value": null,
+                    "label": "german-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "goan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "greece-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "gujarati-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "hawaian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "hyderabad-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "indonesian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "international-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "iranian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "irish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "italian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "jain-food"
+                },
+                {
+                    "value": null,
+                    "label": "jamaican-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "japanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "kashmiri-cusine"
+                },
+                {
+                    "value": null,
+                    "label": "kerala-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "konkan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "korean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "latin-american-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "latin-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "lebanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "local-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "maharastrian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "malaysian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "malwani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mandi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mangalorean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mediterranean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mexican-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "middle-eastern-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "moroccan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "multi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "nepalese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "north-indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "odia-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "pakistani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "peranakan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "persian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "peruvian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "philippine-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "portuguese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "punjabi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "rajasthani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "russian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "scottish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "singaporean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "south-indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "spanish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "sri-lankan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "swiss-cusine"
+                },
+                {
+                    "value": null,
+                    "label": "syrian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "taiwanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "texmex-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "thai-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "tibetian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "turkish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "vietnamese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "western-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "general"
+                },
+                {
+                    "value": null,
+                    "label": "fast-food"
+                },
+                {
+                    "value": null,
+                    "label": "fast-casual-dining"
+                },
+                {
+                    "value": null,
+                    "label": "casual-dining"
+                },
+                {
+                    "value": null,
+                    "label": "fine-dining"
+                },
+                {
+                    "value": null,
+                    "label": "luxury-dining"
+                },
+                {
+                    "value": null,
+                    "label": "bakery"
+                },
+                {
+                    "value": null,
+                    "label": "juice-bar"
+                },
+                {
+                    "value": null,
+                    "label": "dessert-parlour"
+                },
+                {
+                    "value": null,
+                    "label": "brewery"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "vegan-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "quick-bites"
+                },
+                {
+                    "value": null,
+                    "label": "chain-outlet"
+                },
+                {
+                    "value": null,
+                    "label": "buffet"
+                },
+                {
+                    "value": null,
+                    "label": "themed-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "ladies-night"
+                },
+                {
+                    "value": null,
+                    "label": "breakfast"
+                },
+                {
+                    "value": null,
+                    "label": "brunch"
+                },
+                {
+                    "value": null,
+                    "label": "lunch"
+                },
+                {
+                    "value": null,
+                    "label": "afternoon-tea"
+                },
+                {
+                    "value": null,
+                    "label": "dinner"
+                },
+                {
+                    "value": null,
+                    "label": "supper"
+                },
+                {
+                    "value": null,
+                    "label": "all-day-breakfast"
+                },
+                {
+                    "value": null,
+                    "label": "lunch-and-dinner"
+                },
+                {
+                    "value": null,
+                    "label": "all-meals"
+                },
+                {
+                    "value": null,
+                    "label": "dine-with-a-view"
+                },
+                {
+                    "value": null,
+                    "label": "cakes"
+                },
+                {
+                    "value": null,
+                    "label": "chocolates"
+                },
+                {
+                    "value": null,
+                    "label": "cream-puffs"
+                },
+                {
+                    "value": null,
+                    "label": "cupcakes"
+                },
+                {
+                    "value": null,
+                    "label": "donuts"
+                },
+                {
+                    "value": null,
+                    "label": "pastries"
+                },
+                {
+                    "value": null,
+                    "label": "ice-cream"
+                },
+                {
+                    "value": null,
+                    "label": "frozen-yogurt"
+                },
+                {
+                    "value": null,
+                    "label": "waffles"
+                },
+                {
+                    "value": null,
+                    "label": "breads-and-pastries"
+                },
+                {
+                    "value": null,
+                    "label": "air-conditioned"
+                },
+                {
+                    "value": null,
+                    "label": "drive-thru"
+                },
+                {
+                    "value": null,
+                    "label": "games"
+                },
+                {
+                    "value": null,
+                    "label": "happy-hours"
+                },
+                {
+                    "value": null,
+                    "label": "highchair-available"
+                },
+                {
+                    "value": null,
+                    "label": "karaoke"
+                },
+                {
+                    "value": null,
+                    "label": "kids-play-area"
+                },
+                {
+                    "value": null,
+                    "label": "live-cooking"
+                },
+                {
+                    "value": null,
+                    "label": "live-music"
+                },
+                {
+                    "value": null,
+                    "label": "live-sports-screening"
+                },
+                {
+                    "value": null,
+                    "label": "live-entertainment"
+                },
+                {
+                    "value": null,
+                    "label": "outdoor-seating"
+                },
+                {
+                    "value": null,
+                    "label": "parking-available"
+                },
+                {
+                    "value": null,
+                    "label": "poolside-dining"
+                },
+                {
+                    "value": null,
+                    "label": "private-dining"
+                },
+                {
+                    "value": null,
+                    "label": "rooftop-dining"
+                },
+                {
+                    "value": null,
+                    "label": "serves-alcohol-full-bar"
+                },
+                {
+                    "value": null,
+                    "label": "smoking-area"
+                },
+                {
+                    "value": null,
+                    "label": "wheelchair-access"
+                },
+                {
+                    "value": null,
+                    "label": "wifi"
+                },
+                {
+                    "value": null,
+                    "label": "delivery-services"
+                },
+                {
+                    "value": null,
+                    "label": "booking-and-reservations"
+                },
+                {
+                    "value": null,
+                    "label": "catering-services"
+                },
+                {
+                    "value": null,
+                    "label": "24/7"
+                },
+                {
+                    "value": null,
+                    "label": "self-serve"
+                },
+                {
+                    "value": null,
+                    "label": "friendly-staff"
+                },
+                {
+                    "value": null,
+                    "label": "dine-in"
+                },
+                {
+                    "value": null,
+                    "label": "mobile-app"
+                },
+                {
+                    "value": null,
+                    "label": "take-away"
+                },
+                {
+                    "value": null,
+                    "label": "classical-design"
+                },
+                {
+                    "value": null,
+                    "label": "ethnic-design"
+                },
+                {
+                    "value": null,
+                    "label": "industrial-design"
+                },
+                {
+                    "value": null,
+                    "label": "country-design"
+                },
+                {
+                    "value": null,
+                    "label": "basic-design"
+                },
+                {
+                    "value": null,
+                    "label": "other-design"
+                },
+                {
+                    "value": null,
+                    "label": "large-group-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "business-meeting"
+                },
+                {
+                    "value": null,
+                    "label": "couple-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "pet-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-apple-pay"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-android-pay"
+                },
+                {
+                    "value": null,
+                    "label": "mobile-payment"
+                },
+                {
+                    "value": null,
+                    "label": "cash-on-delivery"
+                },
+                {
+                    "value": null,
+                    "label": "cards-only"
+                },
+                {
+                    "value": null,
+                    "label": "premium"
+                },
+                {
+                    "value": null,
+                    "label": "average-pricing"
+                },
+                {
+                    "value": null,
+                    "label": "affordable"
+                },
+                {
+                    "value": null,
+                    "label": "steak-house"
+                },
+                {
+                    "value": null,
+                    "label": "gastropub"
+                },
+                {
+                    "value": null,
+                    "label": "greek-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "haute-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "nouvelle-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "halal"
+                },
+                {
+                    "value": null,
+                    "label": "kosher"
+                },
+                {
+                    "value": null,
+                    "label": "specialty-food-market"
+                },
+                {
+                    "value": null,
+                    "label": "late-night-dining"
+                },
+                {
+                    "value": null,
+                    "label": "dine-with-chef"
+                },
+                {
+                    "value": null,
+                    "label": "curry"
+                },
+                {
+                    "value": null,
+                    "label": "dim-sum"
+                },
+                {
+                    "value": null,
+                    "label": "noodles"
+                },
+                {
+                    "value": null,
+                    "label": "pasta"
+                },
+                {
+                    "value": null,
+                    "label": "pizza"
+                },
+                {
+                    "value": null,
+                    "label": "sushi"
+                },
+                {
+                    "value": null,
+                    "label": "tapas"
+                },
+                {
+                    "value": null,
+                    "label": "soups"
+                },
+                {
+                    "value": null,
+                    "label": "hamburgers"
+                },
+                {
+                    "value": null,
+                    "label": "salads"
+                },
+                {
+                    "value": null,
+                    "label": "sandwiches"
+                },
+                {
+                    "value": null,
+                    "label": "wraps-and-rolls"
+                },
+                {
+                    "value": null,
+                    "label": "meat"
+                },
+                {
+                    "value": null,
+                    "label": "poultry"
+                },
+                {
+                    "value": null,
+                    "label": "seafood"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "vegan"
+                },
+                {
+                    "value": null,
+                    "label": "juices"
+                },
+                {
+                    "value": null,
+                    "label": "smoothies"
+                },
+                {
+                    "value": null,
+                    "label": "beers"
+                },
+                {
+                    "value": null,
+                    "label": "cocktails"
+                },
+                {
+                    "value": null,
+                    "label": "coffee"
+                },
+                {
+                    "value": null,
+                    "label": "tea"
+                },
+                {
+                    "value": null,
+                    "label": "whiskeys"
+                },
+                {
+                    "value": null,
+                    "label": "wines"
+                },
+                {
+                    "value": null,
+                    "label": "hookah"
+                },
+                {
+                    "value": null,
+                    "label": "gluten-free"
+                },
+                {
+                    "value": null,
+                    "label": "signature-dish"
+                },
+                {
+                    "value": null,
+                    "label": "shepherd-pie"
+                },
+                {
+                    "value": null,
+                    "label": "eton-mess"
+                },
+                {
+                    "value": null,
+                    "label": "rum"
+                },
+                {
+                    "value": null,
+                    "label": "mocktails"
+                },
+                {
+                    "value": null,
+                    "label": "mousse"
+                },
+                {
+                    "value": null,
+                    "label": "celebrity-chef"
+                },
+                {
+                    "value": null,
+                    "label": "dance-floor"
+                },
+                {
+                    "value": null,
+                    "label": "banquet-hall"
+                },
+                {
+                    "value": null,
+                    "label": "infinity-pool"
+                },
+                {
+                    "value": null,
+                    "label": "validated-parking"
+                },
+                {
+                    "value": null,
+                    "label": "tv"
+                },
+                {
+                    "value": null,
+                    "label": "valet-parking"
+                },
+                {
+                    "value": null,
+                    "label": "online-order"
+                },
+                {
+                    "value": null,
+                    "label": "modern-design"
+                },
+                {
+                    "value": null,
+                    "label": "kid-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-cards"
+                },
+                {
+                    "value": null,
+                    "label": "luxury"
+                }]
+            },
+            "examples": [
+                [{
+                    "value": null,
+                    "label": "restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "cafe"
+                },
+                {
+                    "value": null,
+                    "label": "food-truck"
+                },
+                {
+                    "value": null,
+                    "label": "food-court"
+                },
+                {
+                    "value": null,
+                    "label": "food-stall"
+                },
+                {
+                    "value": null,
+                    "label": "bars-and-pubs"
+                },
+                {
+                    "value": null,
+                    "label": "sports-bar"
+                },
+                {
+                    "value": null,
+                    "label": "club"
+                },
+                {
+                    "value": null,
+                    "label": "afghani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "african-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "american-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "andhra-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "arabian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "asian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "assamese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "australian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "awadhi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "barbeque"
+                },
+                {
+                    "value": null,
+                    "label": "belgian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "bengali-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "brazilian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "british-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "burmese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "canadian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "cantonese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "carribean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chettinad-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chilean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "chinese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "continental-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "cuban-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "dutch-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "egyptian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "ethiopian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "european-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "filipino-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "french-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "fusion-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "fusion-cuisine-indo-chinese-fusion"
+                },
+                {
+                    "value": null,
+                    "label": "german-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "goan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "greece-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "gujarati-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "hawaian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "hyderabad-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "indonesian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "international-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "iranian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "irish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "italian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "jain-food"
+                },
+                {
+                    "value": null,
+                    "label": "jamaican-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "japanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "kashmiri-cusine"
+                },
+                {
+                    "value": null,
+                    "label": "kerala-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "konkan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "korean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "latin-american-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "latin-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "lebanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "local-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "maharastrian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "malaysian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "malwani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mandi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mangalorean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mediterranean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "mexican-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "middle-eastern-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "moroccan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "multi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "nepalese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "north-indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "odia-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "pakistani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "peranakan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "persian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "peruvian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "philippine-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "portuguese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "punjabi-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "rajasthani-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "russian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "scottish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "singaporean-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "south-indian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "spanish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "sri-lankan-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "swiss-cusine"
+                },
+                {
+                    "value": null,
+                    "label": "syrian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "taiwanese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "texmex-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "thai-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "tibetian-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "turkish-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "vietnamese-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "western-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "general"
+                },
+                {
+                    "value": null,
+                    "label": "fast-food"
+                },
+                {
+                    "value": null,
+                    "label": "fast-casual-dining"
+                },
+                {
+                    "value": null,
+                    "label": "casual-dining"
+                },
+                {
+                    "value": null,
+                    "label": "fine-dining"
+                },
+                {
+                    "value": null,
+                    "label": "luxury-dining"
+                },
+                {
+                    "value": null,
+                    "label": "bakery"
+                },
+                {
+                    "value": null,
+                    "label": "juice-bar"
+                },
+                {
+                    "value": null,
+                    "label": "dessert-parlour"
+                },
+                {
+                    "value": null,
+                    "label": "brewery"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "vegan-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "quick-bites"
+                },
+                {
+                    "value": null,
+                    "label": "chain-outlet"
+                },
+                {
+                    "value": null,
+                    "label": "buffet"
+                },
+                {
+                    "value": null,
+                    "label": "themed-restaurant"
+                },
+                {
+                    "value": null,
+                    "label": "ladies-night"
+                },
+                {
+                    "value": null,
+                    "label": "breakfast"
+                },
+                {
+                    "value": null,
+                    "label": "brunch"
+                },
+                {
+                    "value": null,
+                    "label": "lunch"
+                },
+                {
+                    "value": null,
+                    "label": "afternoon-tea"
+                },
+                {
+                    "value": null,
+                    "label": "dinner"
+                },
+                {
+                    "value": null,
+                    "label": "supper"
+                },
+                {
+                    "value": null,
+                    "label": "all-day-breakfast"
+                },
+                {
+                    "value": null,
+                    "label": "lunch-and-dinner"
+                },
+                {
+                    "value": null,
+                    "label": "all-meals"
+                },
+                {
+                    "value": null,
+                    "label": "dine-with-a-view"
+                },
+                {
+                    "value": null,
+                    "label": "cakes"
+                },
+                {
+                    "value": null,
+                    "label": "chocolates"
+                },
+                {
+                    "value": null,
+                    "label": "cream-puffs"
+                },
+                {
+                    "value": null,
+                    "label": "cupcakes"
+                },
+                {
+                    "value": null,
+                    "label": "donuts"
+                },
+                {
+                    "value": null,
+                    "label": "pastries"
+                },
+                {
+                    "value": null,
+                    "label": "ice-cream"
+                },
+                {
+                    "value": null,
+                    "label": "frozen-yogurt"
+                },
+                {
+                    "value": null,
+                    "label": "waffles"
+                },
+                {
+                    "value": null,
+                    "label": "breads-and-pastries"
+                },
+                {
+                    "value": null,
+                    "label": "air-conditioned"
+                },
+                {
+                    "value": null,
+                    "label": "drive-thru"
+                },
+                {
+                    "value": null,
+                    "label": "games"
+                },
+                {
+                    "value": null,
+                    "label": "happy-hours"
+                },
+                {
+                    "value": null,
+                    "label": "highchair-available"
+                },
+                {
+                    "value": null,
+                    "label": "karaoke"
+                },
+                {
+                    "value": null,
+                    "label": "kids-play-area"
+                },
+                {
+                    "value": null,
+                    "label": "live-cooking"
+                },
+                {
+                    "value": null,
+                    "label": "live-music"
+                },
+                {
+                    "value": null,
+                    "label": "live-sports-screening"
+                },
+                {
+                    "value": null,
+                    "label": "live-entertainment"
+                },
+                {
+                    "value": null,
+                    "label": "outdoor-seating"
+                },
+                {
+                    "value": null,
+                    "label": "parking-available"
+                },
+                {
+                    "value": null,
+                    "label": "poolside-dining"
+                },
+                {
+                    "value": null,
+                    "label": "private-dining"
+                },
+                {
+                    "value": null,
+                    "label": "rooftop-dining"
+                },
+                {
+                    "value": null,
+                    "label": "serves-alcohol-full-bar"
+                },
+                {
+                    "value": null,
+                    "label": "smoking-area"
+                },
+                {
+                    "value": null,
+                    "label": "wheelchair-access"
+                },
+                {
+                    "value": null,
+                    "label": "wifi"
+                },
+                {
+                    "value": null,
+                    "label": "delivery-services"
+                },
+                {
+                    "value": null,
+                    "label": "booking-and-reservations"
+                },
+                {
+                    "value": null,
+                    "label": "catering-services"
+                },
+                {
+                    "value": null,
+                    "label": "24/7"
+                },
+                {
+                    "value": null,
+                    "label": "self-serve"
+                },
+                {
+                    "value": null,
+                    "label": "friendly-staff"
+                },
+                {
+                    "value": null,
+                    "label": "dine-in"
+                },
+                {
+                    "value": null,
+                    "label": "mobile-app"
+                },
+                {
+                    "value": null,
+                    "label": "take-away"
+                },
+                {
+                    "value": null,
+                    "label": "classical-design"
+                },
+                {
+                    "value": null,
+                    "label": "ethnic-design"
+                },
+                {
+                    "value": null,
+                    "label": "industrial-design"
+                },
+                {
+                    "value": null,
+                    "label": "country-design"
+                },
+                {
+                    "value": null,
+                    "label": "basic-design"
+                },
+                {
+                    "value": null,
+                    "label": "other-design"
+                },
+                {
+                    "value": null,
+                    "label": "large-group-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "business-meeting"
+                },
+                {
+                    "value": null,
+                    "label": "couple-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "pet-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-apple-pay"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-android-pay"
+                },
+                {
+                    "value": null,
+                    "label": "mobile-payment"
+                },
+                {
+                    "value": null,
+                    "label": "cash-on-delivery"
+                },
+                {
+                    "value": null,
+                    "label": "cards-only"
+                },
+                {
+                    "value": null,
+                    "label": "premium"
+                },
+                {
+                    "value": null,
+                    "label": "average-pricing"
+                },
+                {
+                    "value": null,
+                    "label": "affordable"
+                },
+                {
+                    "value": null,
+                    "label": "steak-house"
+                },
+                {
+                    "value": null,
+                    "label": "gastropub"
+                },
+                {
+                    "value": null,
+                    "label": "greek-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "haute-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "nouvelle-cuisine"
+                },
+                {
+                    "value": null,
+                    "label": "halal"
+                },
+                {
+                    "value": null,
+                    "label": "kosher"
+                },
+                {
+                    "value": null,
+                    "label": "specialty-food-market"
+                },
+                {
+                    "value": null,
+                    "label": "late-night-dining"
+                },
+                {
+                    "value": null,
+                    "label": "dine-with-chef"
+                },
+                {
+                    "value": null,
+                    "label": "curry"
+                },
+                {
+                    "value": null,
+                    "label": "dim-sum"
+                },
+                {
+                    "value": null,
+                    "label": "noodles"
+                },
+                {
+                    "value": null,
+                    "label": "pasta"
+                },
+                {
+                    "value": null,
+                    "label": "pizza"
+                },
+                {
+                    "value": null,
+                    "label": "sushi"
+                },
+                {
+                    "value": null,
+                    "label": "tapas"
+                },
+                {
+                    "value": null,
+                    "label": "soups"
+                },
+                {
+                    "value": null,
+                    "label": "hamburgers"
+                },
+                {
+                    "value": null,
+                    "label": "salads"
+                },
+                {
+                    "value": null,
+                    "label": "sandwiches"
+                },
+                {
+                    "value": null,
+                    "label": "wraps-and-rolls"
+                },
+                {
+                    "value": null,
+                    "label": "meat"
+                },
+                {
+                    "value": null,
+                    "label": "poultry"
+                },
+                {
+                    "value": null,
+                    "label": "seafood"
+                },
+                {
+                    "value": null,
+                    "label": "vegetarian-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "vegan"
+                },
+                {
+                    "value": null,
+                    "label": "juices"
+                },
+                {
+                    "value": null,
+                    "label": "smoothies"
+                },
+                {
+                    "value": null,
+                    "label": "beers"
+                },
+                {
+                    "value": null,
+                    "label": "cocktails"
+                },
+                {
+                    "value": null,
+                    "label": "coffee"
+                },
+                {
+                    "value": null,
+                    "label": "tea"
+                },
+                {
+                    "value": null,
+                    "label": "whiskeys"
+                },
+                {
+                    "value": null,
+                    "label": "wines"
+                },
+                {
+                    "value": null,
+                    "label": "hookah"
+                },
+                {
+                    "value": null,
+                    "label": "gluten-free"
+                },
+                {
+                    "value": null,
+                    "label": "signature-dish"
+                },
+                {
+                    "value": null,
+                    "label": "shepherd-pie"
+                },
+                {
+                    "value": null,
+                    "label": "eton-mess"
+                },
+                {
+                    "value": null,
+                    "label": "rum"
+                },
+                {
+                    "value": null,
+                    "label": "mocktails"
+                },
+                {
+                    "value": null,
+                    "label": "mousse"
+                },
+                {
+                    "value": null,
+                    "label": "celebrity-chef"
+                },
+                {
+                    "value": null,
+                    "label": "dance-floor"
+                },
+                {
+                    "value": null,
+                    "label": "banquet-hall"
+                },
+                {
+                    "value": null,
+                    "label": "infinity-pool"
+                },
+                {
+                    "value": null,
+                    "label": "validated-parking"
+                },
+                {
+                    "value": null,
+                    "label": "tv"
+                },
+                {
+                    "value": null,
+                    "label": "valet-parking"
+                },
+                {
+                    "value": null,
+                    "label": "online-order"
+                },
+                {
+                    "value": null,
+                    "label": "modern-design"
+                },
+                {
+                    "value": null,
+                    "label": "kid-friendly"
+                },
+                {
+                    "value": null,
+                    "label": "accepts-cards"
+                },
+                {
+                    "value": null,
+                    "label": "luxury"
+                }]
+            ]
+        }
+    },
+    "examples": [{
+        "dining": [{
+            "value": null,
+            "label": "restaurant"
+        },
+        {
+            "value": null,
+            "label": "cafe"
+        },
+        {
+            "value": null,
+            "label": "food-truck"
+        },
+        {
+            "value": null,
+            "label": "food-court"
+        },
+        {
+            "value": null,
+            "label": "food-stall"
+        },
+        {
+            "value": null,
+            "label": "bars-and-pubs"
+        },
+        {
+            "value": null,
+            "label": "sports-bar"
+        },
+        {
+            "value": null,
+            "label": "club"
+        },
+        {
+            "value": null,
+            "label": "afghani-cuisine"
+        },
+        {
+            "value": null,
+            "label": "african-cuisine"
+        },
+        {
+            "value": null,
+            "label": "american-cuisine"
+        },
+        {
+            "value": null,
+            "label": "andhra-cuisine"
+        },
+        {
+            "value": null,
+            "label": "arabian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "asian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "assamese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "australian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "awadhi-cuisine"
+        },
+        {
+            "value": null,
+            "label": "barbeque"
+        },
+        {
+            "value": null,
+            "label": "belgian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "bengali-cuisine"
+        },
+        {
+            "value": null,
+            "label": "brazilian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "british-cuisine"
+        },
+        {
+            "value": null,
+            "label": "burmese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "canadian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "cantonese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "carribean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "chettinad-cuisine"
+        },
+        {
+            "value": null,
+            "label": "chilean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "chinese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "continental-cuisine"
+        },
+        {
+            "value": null,
+            "label": "cuban-cuisine"
+        },
+        {
+            "value": null,
+            "label": "dutch-cuisine"
+        },
+        {
+            "value": null,
+            "label": "egyptian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "ethiopian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "european-cuisine"
+        },
+        {
+            "value": null,
+            "label": "filipino-cuisine"
+        },
+        {
+            "value": null,
+            "label": "french-cuisine"
+        },
+        {
+            "value": null,
+            "label": "fusion-cuisine"
+        },
+        {
+            "value": null,
+            "label": "fusion-cuisine-indo-chinese-fusion"
+        },
+        {
+            "value": null,
+            "label": "german-cuisine"
+        },
+        {
+            "value": null,
+            "label": "goan-cuisine"
+        },
+        {
+            "value": null,
+            "label": "greece-cuisine"
+        },
+        {
+            "value": null,
+            "label": "gujarati-cuisine"
+        },
+        {
+            "value": null,
+            "label": "hawaian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "hyderabad-cuisine"
+        },
+        {
+            "value": null,
+            "label": "indian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "indonesian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "international-cuisine"
+        },
+        {
+            "value": null,
+            "label": "iranian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "irish-cuisine"
+        },
+        {
+            "value": null,
+            "label": "italian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "jain-food"
+        },
+        {
+            "value": null,
+            "label": "jamaican-cuisine"
+        },
+        {
+            "value": null,
+            "label": "japanese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "kashmiri-cusine"
+        },
+        {
+            "value": null,
+            "label": "kerala-cuisine"
+        },
+        {
+            "value": null,
+            "label": "konkan-cuisine"
+        },
+        {
+            "value": null,
+            "label": "korean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "latin-american-cuisine"
+        },
+        {
+            "value": null,
+            "label": "latin-cuisine"
+        },
+        {
+            "value": null,
+            "label": "lebanese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "local-cuisine"
+        },
+        {
+            "value": null,
+            "label": "maharastrian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "malaysian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "malwani-cuisine"
+        },
+        {
+            "value": null,
+            "label": "mandi-cuisine"
+        },
+        {
+            "value": null,
+            "label": "mangalorean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "mediterranean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "mexican-cuisine"
+        },
+        {
+            "value": null,
+            "label": "middle-eastern-cuisine"
+        },
+        {
+            "value": null,
+            "label": "moroccan-cuisine"
+        },
+        {
+            "value": null,
+            "label": "multi-cuisine"
+        },
+        {
+            "value": null,
+            "label": "nepalese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "north-indian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "odia-cuisine"
+        },
+        {
+            "value": null,
+            "label": "pakistani-cuisine"
+        },
+        {
+            "value": null,
+            "label": "peranakan-cuisine"
+        },
+        {
+            "value": null,
+            "label": "persian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "peruvian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "philippine-cuisine"
+        },
+        {
+            "value": null,
+            "label": "portuguese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "punjabi-cuisine"
+        },
+        {
+            "value": null,
+            "label": "rajasthani-cuisine"
+        },
+        {
+            "value": null,
+            "label": "russian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "scottish-cuisine"
+        },
+        {
+            "value": null,
+            "label": "singaporean-cuisine"
+        },
+        {
+            "value": null,
+            "label": "south-indian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "spanish-cuisine"
+        },
+        {
+            "value": null,
+            "label": "sri-lankan-cuisine"
+        },
+        {
+            "value": null,
+            "label": "swiss-cusine"
+        },
+        {
+            "value": null,
+            "label": "syrian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "taiwanese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "texmex-cuisine"
+        },
+        {
+            "value": null,
+            "label": "thai-cuisine"
+        },
+        {
+            "value": null,
+            "label": "tibetian-cuisine"
+        },
+        {
+            "value": null,
+            "label": "turkish-cuisine"
+        },
+        {
+            "value": null,
+            "label": "vietnamese-cuisine"
+        },
+        {
+            "value": null,
+            "label": "western-cuisine"
+        },
+        {
+            "value": null,
+            "label": "general"
+        },
+        {
+            "value": null,
+            "label": "fast-food"
+        },
+        {
+            "value": null,
+            "label": "fast-casual-dining"
+        },
+        {
+            "value": null,
+            "label": "casual-dining"
+        },
+        {
+            "value": null,
+            "label": "fine-dining"
+        },
+        {
+            "value": null,
+            "label": "luxury-dining"
+        },
+        {
+            "value": null,
+            "label": "bakery"
+        },
+        {
+            "value": null,
+            "label": "juice-bar"
+        },
+        {
+            "value": null,
+            "label": "dessert-parlour"
+        },
+        {
+            "value": null,
+            "label": "brewery"
+        },
+        {
+            "value": null,
+            "label": "vegetarian-restaurant"
+        },
+        {
+            "value": null,
+            "label": "vegan-restaurant"
+        },
+        {
+            "value": null,
+            "label": "quick-bites"
+        },
+        {
+            "value": null,
+            "label": "chain-outlet"
+        },
+        {
+            "value": null,
+            "label": "buffet"
+        },
+        {
+            "value": null,
+            "label": "themed-restaurant"
+        },
+        {
+            "value": null,
+            "label": "ladies-night"
+        },
+        {
+            "value": null,
+            "label": "breakfast"
+        },
+        {
+            "value": null,
+            "label": "brunch"
+        },
+        {
+            "value": null,
+            "label": "lunch"
+        },
+        {
+            "value": null,
+            "label": "afternoon-tea"
+        },
+        {
+            "value": null,
+            "label": "dinner"
+        },
+        {
+            "value": null,
+            "label": "supper"
+        },
+        {
+            "value": null,
+            "label": "all-day-breakfast"
+        },
+        {
+            "value": null,
+            "label": "lunch-and-dinner"
+        },
+        {
+            "value": null,
+            "label": "all-meals"
+        },
+        {
+            "value": null,
+            "label": "dine-with-a-view"
+        },
+        {
+            "value": null,
+            "label": "cakes"
+        },
+        {
+            "value": null,
+            "label": "chocolates"
+        },
+        {
+            "value": null,
+            "label": "cream-puffs"
+        },
+        {
+            "value": null,
+            "label": "cupcakes"
+        },
+        {
+            "value": null,
+            "label": "donuts"
+        },
+        {
+            "value": null,
+            "label": "pastries"
+        },
+        {
+            "value": null,
+            "label": "ice-cream"
+        },
+        {
+            "value": null,
+            "label": "frozen-yogurt"
+        },
+        {
+            "value": null,
+            "label": "waffles"
+        },
+        {
+            "value": null,
+            "label": "breads-and-pastries"
+        },
+        {
+            "value": null,
+            "label": "air-conditioned"
+        },
+        {
+            "value": null,
+            "label": "drive-thru"
+        },
+        {
+            "value": null,
+            "label": "games"
+        },
+        {
+            "value": null,
+            "label": "happy-hours"
+        },
+        {
+            "value": null,
+            "label": "highchair-available"
+        },
+        {
+            "value": null,
+            "label": "karaoke"
+        },
+        {
+            "value": null,
+            "label": "kids-play-area"
+        },
+        {
+            "value": null,
+            "label": "live-cooking"
+        },
+        {
+            "value": null,
+            "label": "live-music"
+        },
+        {
+            "value": null,
+            "label": "live-sports-screening"
+        },
+        {
+            "value": null,
+            "label": "live-entertainment"
+        },
+        {
+            "value": null,
+            "label": "outdoor-seating"
+        },
+        {
+            "value": null,
+            "label": "parking-available"
+        },
+        {
+            "value": null,
+            "label": "poolside-dining"
+        },
+        {
+            "value": null,
+            "label": "private-dining"
+        },
+        {
+            "value": null,
+            "label": "rooftop-dining"
+        },
+        {
+            "value": null,
+            "label": "serves-alcohol-full-bar"
+        },
+        {
+            "value": null,
+            "label": "smoking-area"
+        },
+        {
+            "value": null,
+            "label": "wheelchair-access"
+        },
+        {
+            "value": null,
+            "label": "wifi"
+        },
+        {
+            "value": null,
+            "label": "delivery-services"
+        },
+        {
+            "value": null,
+            "label": "booking-and-reservations"
+        },
+        {
+            "value": null,
+            "label": "catering-services"
+        },
+        {
+            "value": null,
+            "label": "24/7"
+        },
+        {
+            "value": null,
+            "label": "self-serve"
+        },
+        {
+            "value": null,
+            "label": "friendly-staff"
+        },
+        {
+            "value": null,
+            "label": "dine-in"
+        },
+        {
+            "value": null,
+            "label": "mobile-app"
+        },
+        {
+            "value": null,
+            "label": "take-away"
+        },
+        {
+            "value": null,
+            "label": "classical-design"
+        },
+        {
+            "value": null,
+            "label": "ethnic-design"
+        },
+        {
+            "value": null,
+            "label": "industrial-design"
+        },
+        {
+            "value": null,
+            "label": "country-design"
+        },
+        {
+            "value": null,
+            "label": "basic-design"
+        },
+        {
+            "value": null,
+            "label": "other-design"
+        },
+        {
+            "value": null,
+            "label": "large-group-friendly"
+        },
+        {
+            "value": null,
+            "label": "business-meeting"
+        },
+        {
+            "value": null,
+            "label": "couple-friendly"
+        },
+        {
+            "value": null,
+            "label": "vegetarian-friendly"
+        },
+        {
+            "value": null,
+            "label": "pet-friendly"
+        },
+        {
+            "value": null,
+            "label": "accepts-apple-pay"
+        },
+        {
+            "value": null,
+            "label": "accepts-android-pay"
+        },
+        {
+            "value": null,
+            "label": "mobile-payment"
+        },
+        {
+            "value": null,
+            "label": "cash-on-delivery"
+        },
+        {
+            "value": null,
+            "label": "cards-only"
+        },
+        {
+            "value": null,
+            "label": "premium"
+        },
+        {
+            "value": null,
+            "label": "average-pricing"
+        },
+        {
+            "value": null,
+            "label": "affordable"
+        },
+        {
+            "value": null,
+            "label": "steak-house"
+        },
+        {
+            "value": null,
+            "label": "gastropub"
+        },
+        {
+            "value": null,
+            "label": "greek-cuisine"
+        },
+        {
+            "value": null,
+            "label": "haute-cuisine"
+        },
+        {
+            "value": null,
+            "label": "nouvelle-cuisine"
+        },
+        {
+            "value": null,
+            "label": "halal"
+        },
+        {
+            "value": null,
+            "label": "kosher"
+        },
+        {
+            "value": null,
+            "label": "specialty-food-market"
+        },
+        {
+            "value": null,
+            "label": "late-night-dining"
+        },
+        {
+            "value": null,
+            "label": "dine-with-chef"
+        },
+        {
+            "value": null,
+            "label": "curry"
+        },
+        {
+            "value": null,
+            "label": "dim-sum"
+        },
+        {
+            "value": null,
+            "label": "noodles"
+        },
+        {
+            "value": null,
+            "label": "pasta"
+        },
+        {
+            "value": null,
+            "label": "pizza"
+        },
+        {
+            "value": null,
+            "label": "sushi"
+        },
+        {
+            "value": null,
+            "label": "tapas"
+        },
+        {
+            "value": null,
+            "label": "soups"
+        },
+        {
+            "value": null,
+            "label": "hamburgers"
+        },
+        {
+            "value": null,
+            "label": "salads"
+        },
+        {
+            "value": null,
+            "label": "sandwiches"
+        },
+        {
+            "value": null,
+            "label": "wraps-and-rolls"
+        },
+        {
+            "value": null,
+            "label": "meat"
+        },
+        {
+            "value": null,
+            "label": "poultry"
+        },
+        {
+            "value": null,
+            "label": "seafood"
+        },
+        {
+            "value": null,
+            "label": "vegetarian-friendly"
+        },
+        {
+            "value": null,
+            "label": "vegan"
+        },
+        {
+            "value": null,
+            "label": "juices"
+        },
+        {
+            "value": null,
+            "label": "smoothies"
+        },
+        {
+            "value": null,
+            "label": "beers"
+        },
+        {
+            "value": null,
+            "label": "cocktails"
+        },
+        {
+            "value": null,
+            "label": "coffee"
+        },
+        {
+            "value": null,
+            "label": "tea"
+        },
+        {
+            "value": null,
+            "label": "whiskeys"
+        },
+        {
+            "value": null,
+            "label": "wines"
+        },
+        {
+            "value": null,
+            "label": "hookah"
+        },
+        {
+            "value": null,
+            "label": "gluten-free"
+        },
+        {
+            "value": null,
+            "label": "signature-dish"
+        },
+        {
+            "value": null,
+            "label": "shepherd-pie"
+        },
+        {
+            "value": null,
+            "label": "eton-mess"
+        },
+        {
+            "value": null,
+            "label": "rum"
+        },
+        {
+            "value": null,
+            "label": "mocktails"
+        },
+        {
+            "value": null,
+            "label": "mousse"
+        },
+        {
+            "value": null,
+            "label": "celebrity-chef"
+        },
+        {
+            "value": null,
+            "label": "dance-floor"
+        },
+        {
+            "value": null,
+            "label": "banquet-hall"
+        },
+        {
+            "value": null,
+            "label": "infinity-pool"
+        },
+        {
+            "value": null,
+            "label": "validated-parking"
+        },
+        {
+            "value": null,
+            "label": "tv"
+        },
+        {
+            "value": null,
+            "label": "valet-parking"
+        },
+        {
+            "value": null,
+            "label": "online-order"
+        },
+        {
+            "value": null,
+            "label": "modern-design"
+        },
+        {
+            "value": null,
+            "label": "kid-friendly"
+        },
+        {
+            "value": null,
+            "label": "accepts-cards"
+        },
+        {
+            "value": null,
+            "label": "luxury"
+        }]
+    }]
+}

@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default": {},
+    "title": "Root Schema",
+    "required": [
+        "totalRedeemedOffers",
+        "totalSpent",
+        "totalSavings",
+        "redeemedOffers"
+    ],
+    "properties": {
+        "totalRedeemedOffers": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalRedeemedOffers Schema",
+            "examples": [
+                0
+            ]
+        },
+        "totalSpent": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalSpent Schema",
+            "examples": [
+                0
+            ]
+        },
+        "totalSavings": {
+            "type": "integer",
+            "default": 0,
+            "title": "The totalSavings Schema",
+            "examples": [
+                0
+            ]
+        },
+        "redeemedOffers": {
+            "type": "array",
+            "default": [],
+            "title": "The redeemedOffers Schema",
+            "items": {},
+            "examples": [
+                []
+            ]
+        }
+    },
+    "examples": [{
+        "totalRedeemedOffers": 0,
+        "totalSpent": 0,
+        "totalSavings": 0,
+        "redeemedOffers": []
+    }]
+}

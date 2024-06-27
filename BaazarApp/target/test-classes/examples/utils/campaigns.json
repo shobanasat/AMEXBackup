@@ -1,0 +1,127 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/Welcome9",
+    "definitions": {
+        "Welcome9": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "campaigns": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Campaign"
+                    }
+                }
+            },
+            "required": [
+                "campaigns"
+            ],
+            "title": "Welcome9"
+        },
+        "Campaign": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "format": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "images": {
+                    "$ref": "#/definitions/Images"
+                },
+                "campaignType": {
+                    "type": "string"
+                },
+                "externalId": {
+                    "type": "integer"
+                },
+                "cities": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "startDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "active": {
+                    "type": "boolean"
+                },
+                "heroCampaign": {
+                    "type": "boolean"
+                },
+                "created": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            },
+            "required": [
+                "active",
+                "campaignType",
+                "cities",
+                "created",
+                "description",
+                "endDateTime",
+                "heroCampaign",
+                "id",
+                "images",
+                "name",
+                "startDateTime"
+            ],
+            "title": "Campaign"
+        },
+        "Images": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "default": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "thumbnail": {
+                    "type": "string",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".jpg",
+                        ".png"
+                    ]
+                },
+                "icon": {
+                    "type": "string",
+                    "format": "uri",
+                    "qt-uri-protocols": [
+                        "https"
+                    ],
+                    "qt-uri-extensions": [
+                        ".svg"
+                    ]
+                }
+            },
+            "required": [
+                "default",
+                "thumbnail"
+            ],
+            "title": "Images"
+        }
+    }
+}

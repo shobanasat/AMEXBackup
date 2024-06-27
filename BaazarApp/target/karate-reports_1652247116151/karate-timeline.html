@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[1.1:32]","start":1652244014629,"end":1652244016937,"title":"src\/test\/java\/examples\/users\/ADIBSchema[1.1:32] 10:10:14.629-10:10:16.937 To validate the response of recent search API schema"},{"id":2,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[2.1:50]","start":1652244016944,"end":1652244017585,"title":"src\/test\/java\/examples\/users\/ADIBSchema[2.1:50] 10:10:16.944-10:10:17.585 To validate the response of city API schema"},{"id":3,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[3.1:67]","start":1652244017597,"end":1652244018112,"title":"src\/test\/java\/examples\/users\/ADIBSchema[3.1:67] 10:10:17.597-10:10:18.112 To validate the response of Faq API schema"},{"id":4,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[4.1:85]","start":1652244018118,"end":1652244018576,"title":"src\/test\/java\/examples\/users\/ADIBSchema[4.1:85] 10:10:18.118-10:10:18.576 To validate the response for user campaigns schema","className":"failed"},{"id":5,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[5.1:103]","start":1652244018584,"end":1652244019325,"title":"src\/test\/java\/examples\/users\/ADIBSchema[5.1:103] 10:10:18.584-10:10:19.325 To validate the response of merchat search API schema"},{"id":6,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[6.1:122]","start":1652244019329,"end":1652244019796,"title":"src\/test\/java\/examples\/users\/ADIBSchema[6.1:122] 10:10:19.329-10:10:19.796 To validate the response of Typeahead API schema"},{"id":7,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[7.1:141]","start":1652244019806,"end":1652244020253,"title":"src\/test\/java\/examples\/users\/ADIBSchema[7.1:141] 10:10:19.806-10:10:20.253 To validate the response of similar merchant API schema","className":"failed"},{"id":8,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[8.1:159]","start":1652244020259,"end":1652244020735,"title":"src\/test\/java\/examples\/users\/ADIBSchema[8.1:159] 10:10:20.259-10:10:20.735 To validate the response of privacy docs API schema"},{"id":9,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[9.1:176]","start":1652244020745,"end":1652244021200,"title":"src\/test\/java\/examples\/users\/ADIBSchema[9.1:176] 10:10:20.745-10:10:21.200 To validate the response of redeemed offers schema","className":"failed"},{"id":10,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[10.1:194]","start":1652244021215,"end":1652244021809,"title":"src\/test\/java\/examples\/users\/ADIBSchema[10.1:194] 10:10:21.215-10:10:21.809 To validate the response interacted merchant|Offers schema"},{"id":11,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[11.1:212]","start":1652244021814,"end":1652244022223,"title":"src\/test\/java\/examples\/users\/ADIBSchema[11.1:212] 10:10:21.814-10:10:22.223 To validate the merchants details api schema","className":"failed"},{"id":12,"group":1,"content":"src\/test\/java\/examples\/users\/ADIBSchema[12.1:230]","start":1652244022227,"end":1652244022954,"title":"src\/test\/java\/examples\/users\/ADIBSchema[12.1:230] 10:10:22.227-10:10:22.954 To validate the Schema for all list schema"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
